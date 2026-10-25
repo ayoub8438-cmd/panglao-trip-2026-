@@ -1,0 +1,796 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Panglao Trip 2026</title><meta name="description" content="Notre guide de voyage à Panglao, Bohol, du 26 au 29 octobre 2026."><meta name="theme-color" content="#0B5563"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="Panglao 2026"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap"><style>:root{padding-top:env(safe-area-inset-top,0px)}/* Layout: one-column phone app — illustrated hero, swipeable day tabs, bottom tab bar; boarding-pass stubs for bookings */
+:root{
+  --lagoon:#0B5563; --glass:#5CBFAE; --coral:#EE6448; --mango:#F6A93B; --ink:#0F2E35; --mute:#5C7772;
+  --bg:#EDF5F3; --surface:#FFFFFF; --surface2:#F5FAF9; --line:#D6E6E2; --chip:#E1F0EC;
+  --ok:#23845A; --okbg:#DCF2E6; --todo:#C24A2F; --todobg:#FCE5DD; --wait:#9A6A10; --waitbg:#FBEFD3; --info:#3E5B9A; --infobg:#E3E9F7;
+  --shadow:0 1px 2px rgba(11,85,99,.08),0 6px 18px rgba(11,85,99,.07);
+  --display:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --body:"Figtree","Helvetica Neue","Segoe UI",system-ui,sans-serif;
+  --r:18px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --lagoon:#7FD3C6; --glass:#3FA593; --coral:#FF7E62; --mango:#FFBE5C; --ink:#E4F1EE; --mute:#93B2AC;
+  --bg:#071A1F; --surface:#0E262D; --surface2:#123038; --line:#1F3F47; --chip:#163A42;
+  --ok:#6FD6A0; --okbg:#143A2A; --todo:#FF9A80; --todobg:#3D2019; --wait:#F4C470; --waitbg:#3A2E12; --info:#A9BEF0; --infobg:#1D2943;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 22px rgba(0,0,0,.28); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --lagoon:#7FD3C6; --glass:#3FA593; --coral:#FF7E62; --mango:#FFBE5C; --ink:#E4F1EE; --mute:#93B2AC;
+  --bg:#071A1F; --surface:#0E262D; --surface2:#123038; --line:#1F3F47; --chip:#163A42;
+  --ok:#6FD6A0; --okbg:#143A2A; --todo:#FF9A80; --todobg:#3D2019; --wait:#F4C470; --waitbg:#3A2E12; --info:#A9BEF0; --infobg:#1D2943;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 22px rgba(0,0,0,.28); color-scheme:dark}
+
+*{box-sizing:border-box}
+html,body{background:var(--bg)}
+body{margin:0;color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 calc(84px + env(safe-area-inset-bottom,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+a{color:var(--lagoon)}
+:focus-visible{outline:2.5px solid var(--coral);outline-offset:2px;border-radius:8px}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.01em;text-wrap:balance;margin:0}
+.num{font-variant-numeric:tabular-nums}
+.app{max-width:560px;margin:0 auto}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);display:flex;align-items:center;gap:10px;padding-block:10px;margin-inline:-4px;padding-inline:4px}
+.top .back{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:var(--surface);box-shadow:var(--shadow)}
+.top .back[hidden]{display:none}
+.top .ttl{flex:1;min-width:0;font-family:var(--display);font-weight:700;font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top .act{height:36px;padding:0 12px;border-radius:12px;display:flex;align-items:center;gap:6px;background:var(--surface);box-shadow:var(--shadow);font-weight:600;font-size:13px}
+.ico{width:18px;height:18px;flex:0 0 auto}
+
+/* views */
+.view{display:none}
+.view.on{display:block;animation:enter .32s cubic-bezier(.2,.7,.2,1)}
+@keyframes enter{from{opacity:.0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.sec{margin:22px 0 10px;display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.sec h2{font-size:20px}
+.sec .more{font-size:13px;font-weight:600;color:var(--lagoon)}
+.lead{color:var(--mute);margin:0 0 12px}
+
+/* hero */
+.hero{position:relative;border-radius:26px;overflow:hidden;min-height:330px;color:#fff;box-shadow:var(--shadow);margin-top:4px;isolation:isolate}
+.hero svg.sc{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.hero .shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,30,38,.05) 30%,rgba(6,30,38,.62) 100%)}
+.hero .in{padding:22px 20px 44px;display:flex;flex-direction:column;min-height:330px}
+.hero .eyebrow{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;opacity:.95}
+.hero h1{font-size:44px;line-height:.95;font-weight:800;margin-top:auto}
+.hero h1 span{display:block;font-size:20px;font-weight:600;letter-spacing:.02em;margin-top:8px;opacity:.95}
+.hero .hotel{margin-top:14px;display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.16);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.28);border-radius:14px;padding:10px 12px;font-size:13.5px;color:#fff;text-decoration:none}
+.hero .hotel b{display:block;font-size:14.5px}
+.hero .hotel .go{margin-left:auto;font-weight:700;font-size:12px;background:#fff;color:#0B5563;border-radius:999px;padding:5px 10px;white-space:nowrap}
+
+/* countdown */
+.count{margin-top:-28px;position:relative;z-index:2;margin-inline:10px;background:var(--surface);border-radius:20px;box-shadow:var(--shadow);padding:14px 16px;display:flex;align-items:center;gap:14px}
+.count .lbl{font-size:12px;color:var(--mute);font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.count .big{font-family:var(--display);font-weight:800;font-size:21px;white-space:nowrap;line-height:1.05;color:var(--lagoon)}
+.count .cells{display:flex;gap:8px;margin-left:auto}
+.count .cell{min-width:46px;text-align:center;background:var(--chip);border-radius:12px;padding:6px 4px}
+.count .cell b{display:block;font-family:var(--display);font-size:20px;line-height:1.1;color:var(--ink)}
+.count .cell small{font-size:10.5px;color:var(--mute);text-transform:uppercase;letter-spacing:.06em}
+
+/* tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.tile{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:12px 6px 10px;display:flex;flex-direction:column;align-items:center;gap:6px;font-size:12px;font-weight:600;text-align:center;min-width:0;transition:transform .15s}
+.tile:active{transform:scale(.96)}
+.tile .ic{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;color:#fff}
+.tile .ic svg{width:20px;height:20px}
+@media (max-width:360px){.tiles{grid-template-columns:repeat(3,1fr)}}
+
+/* preview list */
+.plist{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden}
+.prow{display:flex;gap:12px;align-items:center;padding:11px 14px;border-bottom:1px solid var(--line);width:100%;text-align:left}
+.prow:last-child{border-bottom:0}
+.prow .t{font-weight:700;font-size:13px;color:var(--lagoon);width:44px;flex:0 0 auto}
+.prow .x{min-width:0;flex:1}
+.prow .x b{display:block;font-size:14.5px;font-weight:600}
+.prow .x span{font-size:12.5px;color:var(--mute)}
+
+/* chips & pills */
+.chips{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 6px;margin-inline:-2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;padding:8px 13px;border-radius:999px;background:var(--surface);box-shadow:var(--shadow);font-size:13px;font-weight:600;white-space:nowrap;transition:background .2s,color .2s}
+.chip[aria-pressed="true"]{background:var(--lagoon);color:var(--bg)}
+.pill{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:999px;white-space:nowrap}
+.p-ok{background:var(--okbg);color:var(--ok)}.p-todo{background:var(--todobg);color:var(--todo)}.p-wait{background:var(--waitbg);color:var(--wait)}.p-info{background:var(--infobg);color:var(--info)}
+.p-v{background:var(--okbg);color:var(--ok)}.p-e{background:var(--waitbg);color:var(--wait)}
+
+/* day */
+.days{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:6px}
+.dbtn{background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:8px 4px;text-align:center;transition:transform .15s}
+.dbtn small{display:block;font-size:11px;color:var(--mute);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.dbtn b{font-family:var(--display);font-size:22px}
+.dbtn[aria-pressed="true"]{background:var(--lagoon);color:var(--bg)}
+.dbtn[aria-pressed="true"] small{color:inherit;opacity:.85}
+.dayhero{position:relative;border-radius:22px;overflow:hidden;color:#fff;margin-top:14px;min-height:170px;box-shadow:var(--shadow);isolation:isolate}
+.dayhero svg.sc{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.dayhero .shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,30,38,0) 20%,rgba(6,30,38,.7))}
+.dayhero .in{padding:16px;display:flex;flex-direction:column;justify-content:flex-end;min-height:170px}
+.dayhero .d{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.dayhero h2{font-size:26px;line-height:1.05;margin-top:4px}
+.dayhero .b{margin-top:8px;font-size:13px;display:flex;gap:8px;flex-wrap:wrap}
+.dayhero .b span{background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:3px 9px}
+.tl{position:relative;margin-top:16px;padding-left:58px}
+.tl::before{content:"";position:absolute;left:47px;top:6px;bottom:6px;width:2px;background:var(--line);border-radius:2px}
+.ti{position:relative;margin-bottom:12px;animation:rise .4s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:.0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.ti .tm{position:absolute;left:-58px;top:12px;width:40px;text-align:right;font-weight:700;font-size:13px;color:var(--lagoon)}
+.ti .dot{position:absolute;left:-17px;top:12px;width:16px;height:16px;border-radius:50%;border:3px solid var(--bg);background:var(--k,var(--glass))}
+.card{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;width:100%;text-align:left;display:block;transition:transform .15s}
+.card:active{transform:scale(.985)}
+.ti .card{display:flex;gap:0}
+.ti .thumb{flex:0 0 78px;min-height:84px;position:relative}
+.ti .thumb svg{position:absolute;inset:0;width:100%;height:100%}
+.ti .body{padding:10px 12px;min-width:0;flex:1}
+.ti .kind{font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--k,var(--lagoon))}
+.ti h3{font-size:15.5px;line-height:1.2;margin-top:2px}
+.ti p{margin:4px 0 0;font-size:13px;color:var(--mute)}
+.ti .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+.mini{font-size:11.5px;font-weight:600;background:var(--chip);border-radius:8px;padding:2px 7px;color:var(--ink)}
+
+/* place cards (food/explore) */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:380px){.grid{grid-template-columns:1fr}}
+.pc{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;text-align:left;display:flex;flex-direction:column;min-width:0;animation:rise .35s both}
+.pc .ph{position:relative;aspect-ratio:16/10;max-width:100%}
+.pc .ph svg{position:absolute;inset:0;width:100%;height:100%}
+.pc .ph .tagf{position:absolute;left:8px;top:8px}
+.pc .bd{padding:10px 12px 12px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.pc b{font-size:14.5px;line-height:1.2}
+.pc .sp{font-size:12.5px;color:var(--mute);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pc .ft{display:flex;justify-content:space-between;gap:6px;margin-top:6px;font-size:12px;font-weight:600}
+.pc .ft .d{color:var(--lagoon)}
+.note{background:var(--waitbg);color:var(--ink);border-radius:14px;padding:10px 12px;font-size:13px;margin-bottom:12px}
+.note b{color:var(--wait)}
+
+/* explore */
+.radar{background:var(--surface);border-radius:22px;box-shadow:var(--shadow);padding:8px;position:relative}
+.radar svg{width:100%;height:auto;display:block}
+.radar .lg{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:11.5px;color:var(--mute);padding:4px 8px 6px}
+.radar .lg i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:0}
+.rlist{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+.rrow{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:10px 12px;display:flex;gap:12px;align-items:center;text-align:left;width:100%}
+.rrow .dt{width:52px;flex:0 0 auto;text-align:center}
+.rrow .dt b{display:block;font-family:var(--display);font-size:17px;color:var(--lagoon)}
+.rrow .dt small{font-size:10.5px;color:var(--mute)}
+.rrow .x{min-width:0;flex:1}
+.rrow .x b{display:block;font-size:14.5px}
+.rrow .x span{font-size:12.5px;color:var(--mute)}
+
+/* sheet */
+.scrim{position:fixed;inset:0;background:rgba(4,20,25,.48);z-index:40;opacity:0;pointer-events:none;transition:opacity .25s}
+.scrim.on{opacity:1;pointer-events:auto}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:41;max-width:560px;margin:0 auto;background:var(--bg);border-radius:24px 24px 0 0;max-height:88%;overflow-y:auto;transform:translateY(105%);transition:transform .34s cubic-bezier(.2,.8,.2,1);padding-bottom:calc(20px + env(safe-area-inset-bottom,0px));overscroll-behavior:contain}
+.sheet.on{transform:none}
+.sheet .sh{position:relative;height:190px}
+.sheet .sh svg{position:absolute;inset:0;width:100%;height:100%}
+.sheet .grab{position:absolute;top:8px;left:50%;width:40px;height:5px;margin-left:-20px;border-radius:3px;background:rgba(255,255,255,.75)}
+.sheet .close{position:absolute;top:12px;right:max(12px,env(safe-area-inset-right,0px));width:34px;height:34px;border-radius:50%;background:rgba(6,30,38,.45);color:#fff;display:grid;place-items:center}
+.sheet .sb{padding:16px max(18px,env(safe-area-inset-left,0px)) 0 max(18px,env(safe-area-inset-left,0px))}
+.sheet h2{font-size:24px;line-height:1.1}
+.sheet .tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 10px}
+.sheet p{margin:0 0 12px}
+.rows{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);margin:12px 0}
+.rw{display:flex;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);font-size:14px}
+.rw:last-child{border-bottom:0}
+.rw dt{width:92px;flex:0 0 auto;color:var(--mute);font-weight:600;font-size:13px}
+.rw dd{margin:0;min-width:0;flex:1}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+.btn{flex:1 1 140px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 14px;border-radius:14px;font-weight:700;font-size:14px;text-decoration:none;text-align:center}
+.btn.pri{background:var(--lagoon);color:var(--bg)}
+.btn.sec2{background:var(--surface);color:var(--lagoon);box-shadow:var(--shadow)}
+.btn.cor{background:var(--coral);color:#fff}
+.near{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}
+.near .chip{font-size:12.5px}
+.copy{display:inline-flex;align-items:center;gap:6px}
+.copy code{font-family:var(--body);font-weight:600;user-select:all}
+.copy button{font-size:11.5px;font-weight:700;color:var(--lagoon);background:var(--chip);padding:3px 8px;border-radius:8px}
+
+/* bookings: boarding-pass stub */
+.bk{background:var(--surface);border-radius:20px;box-shadow:var(--shadow);margin-bottom:14px;overflow:hidden;animation:rise .35s both}
+.bk .hd{display:flex;gap:12px;padding:14px 16px;align-items:flex-start;width:100%;text-align:left}
+.bk .hd .x{flex:1;min-width:0}
+.bk .hd h3{font-size:17px}
+.bk .hd .when{font-size:12.5px;color:var(--mute);font-weight:600;margin-top:2px}
+.bk .hd p{margin:6px 0 0;font-size:13px;color:var(--mute)}
+.bk .perf{height:0;border-top:2px dashed var(--line);margin:0 14px;position:relative}
+.bk .perf::before,.bk .perf::after{content:"";position:absolute;top:-10px;width:18px;height:18px;border-radius:50%;background:var(--bg)}
+.bk .perf::before{left:-24px}.bk .perf::after{right:-24px}
+.bk .pv{padding:6px 16px 14px}
+.prov{border:1px solid var(--line);border-radius:16px;padding:12px 14px;margin-top:10px;background:var(--surface2)}
+.prov .pn{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.prov .pn b{font-size:15px}
+.prov .ds{font-size:13px;color:var(--mute);margin:5px 0 8px}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0 8px}
+.prices div{background:var(--surface);border-radius:12px;padding:7px 10px}
+.prices small{display:block;font-size:11px;color:var(--mute);font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+.prices b{font-family:var(--display);font-size:16px}
+.kv{font-size:13px;margin:4px 0}
+.kv span{color:var(--mute);font-weight:600}
+.seg{display:inline-flex;background:var(--chip);border-radius:12px;padding:3px;gap:2px;margin-top:10px}
+.seg button{font-size:12px;font-weight:700;padding:6px 10px;border-radius:9px;color:var(--mute)}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.segl{font-size:11.5px;color:var(--mute);margin-top:4px}
+
+/* budget */
+.toggle{display:flex;background:var(--surface);border-radius:14px;padding:4px;box-shadow:var(--shadow)}
+.toggle button{flex:1;padding:9px;border-radius:10px;font-weight:700;font-size:14px;color:var(--mute)}
+.toggle button[aria-pressed="true"]{background:var(--lagoon);color:var(--bg)}
+.tot{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.tot div{background:var(--surface);border-radius:18px;box-shadow:var(--shadow);padding:12px 14px}
+.tot small{font-size:12px;color:var(--mute);font-weight:600}
+.tot b{display:block;font-family:var(--display);font-size:28px;line-height:1.1;color:var(--lagoon)}
+.bars{background:var(--surface);border-radius:18px;box-shadow:var(--shadow);padding:12px 14px}
+.bar{display:grid;grid-template-columns:62px 1fr 74px;gap:10px;align-items:center;padding:6px 0;font-size:13px}
+.bar .tr{display:block;height:12px;background:var(--chip);border-radius:6px;overflow:hidden}
+.bar .fl{display:block;height:100%;border-radius:6px;background:var(--glass);transition:width .5s cubic-bezier(.2,.7,.2,1)}
+.bar .v{text-align:right;font-weight:700}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.opt:last-child{border-bottom:0}
+.opt input{width:20px;height:20px;accent-color:var(--lagoon);margin-top:1px;flex:0 0 auto}
+.opt .x{flex:1}
+.opt .x small{color:var(--mute)}
+.lines{background:var(--surface);border-radius:18px;box-shadow:var(--shadow);padding:4px 14px;margin-top:10px}
+.ln{display:flex;gap:10px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.ln:last-child{border-bottom:0}
+.ln .l{flex:1;min-width:0}
+.ln .a{font-weight:700;text-align:right;white-space:nowrap}
+.dh{font-family:var(--display);font-weight:700;font-size:15px;margin:14px 0 4px;color:var(--lagoon)}
+
+/* checklist */
+.prog{display:flex;align-items:center;gap:14px;background:var(--surface);border-radius:18px;box-shadow:var(--shadow);padding:12px 16px}
+.prog svg{width:58px;height:58px;flex:0 0 auto}
+.cg{background:var(--surface);border-radius:18px;box-shadow:var(--shadow);padding:4px 14px;margin-top:12px}
+.cg h3{font-size:15px;padding:10px 0 4px;color:var(--lagoon)}
+.ck{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line);font-size:14px;cursor:pointer}
+.ck input{appearance:none;-webkit-appearance:none;width:22px;height:22px;border-radius:7px;border:2px solid var(--glass);flex:0 0 auto;display:grid;place-items:center;margin:0;transition:background .2s}
+.ck input:checked{background:var(--glass)}
+.ck input:checked::after{content:"";width:6px;height:11px;border:solid var(--surface);border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.ck input:checked + span{color:var(--mute);text-decoration:line-through}
+
+/* info */
+.wt{width:100%;border-collapse:collapse;font-size:13px;background:var(--surface);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.wt th{background:var(--lagoon);color:var(--bg);text-align:left;padding:8px 10px;font-size:12px}
+.wt td{padding:8px 10px;border-top:1px solid var(--line);vertical-align:top}
+.tbx{overflow-x:auto}
+.ctc{background:var(--surface);border-radius:18px;box-shadow:var(--shadow);padding:2px 14px}
+.ctc .rw dt{width:auto;flex:1;color:var(--ink);font-weight:600;font-size:14px}
+.ctc .rw dd{flex:0 0 auto}
+.tips{background:var(--surface);border-radius:18px;box-shadow:var(--shadow);padding:6px 16px 6px 34px;margin:0}
+.tips li{padding:6px 0;font-size:14px}
+.steps{counter-reset:s;display:flex;flex-direction:column;gap:10px}
+.step{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:12px 14px 12px 50px;position:relative;font-size:14px}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:14px;top:12px;width:24px;height:24px;border-radius:50%;background:var(--glass);color:var(--surface);font-weight:800;display:grid;place-items:center;font-size:13px}
+.src{font-size:12.5px;color:var(--mute)}
+
+/* tab bar */
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:25;background:var(--surface);box-shadow:0 -1px 0 var(--line),0 -8px 24px rgba(11,85,99,.08);
+  padding:6px max(10px,env(safe-area-inset-right,0px)) calc(6px + env(safe-area-inset-bottom,0px)) max(10px,env(safe-area-inset-left,0px))}
+.tabs .in{max-width:560px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
+.tab{display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 0;font-size:11px;font-weight:600;color:var(--mute);position:relative}
+.tab svg{width:22px;height:22px}
+.tab[aria-current="page"]{color:var(--lagoon)}
+.tab[aria-current="page"]::before{content:"";position:absolute;top:-6px;width:28px;height:3px;border-radius:0 0 3px 3px;background:var(--coral)}
+.toast{position:fixed;left:50%;bottom:calc(92px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:12px;font-weight:600;font-size:13.5px;opacity:0;transition:.25s;z-index:60;pointer-events:none;max-width:90%}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.foot{font-size:12px;color:var(--mute);text-align:center;margin:26px 0 8px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+.ph-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .ph-img,.dayhero .ph-img{z-index:-1}
+[hidden]{display:none!important}
+</style></head><body><div class="app"><header class="top"><button id="back" class="back" type="button" aria-label="Retour à l'accueil" hidden><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg></button><div class="ttl" id="ttl">Panglao Trip 2026</div><button class="act" type="button" data-share><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V3M8 7l4-4 4 4M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg>Partager</button></header><main><section class="view" id="v-home"></section><section class="view" id="v-days"></section><section class="view" id="v-explore"></section><section class="view" id="v-food"></section><section class="view" id="v-bookings"></section><section class="view" id="v-budget"></section><section class="view" id="v-checklist"></section><section class="view" id="v-infos"></section><section class="view" id="v-install"></section></main></div><div id="scrim" class="scrim"></div><div id="sheet" class="sheet" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Détails"></div><div id="toast" class="toast" role="status" aria-live="polite"></div><nav class="tabs" aria-label="Navigation principale"><div class="in"><button class="tab" type="button" data-go="home"><svg  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Accueil</span></button><button class="tab" type="button" data-go="days"><svg  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Jours</span></button><button class="tab" type="button" data-go="explore"><svg  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></svg><span>Explore</span></button><button class="tab" type="button" data-go="food"><svg  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3v8a2 2 0 0 0 2 2v8M5 3v5M9 3v5M16 21V3c2.2 1 3.5 3.4 3.5 6.5S18 13 16 13"/></svg><span>Food</span></button><button class="tab" type="button" data-go="bookings"><svg  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-3a2 2 0 0 0 0-4z"/><path d="M14 5v14" stroke-dasharray="2 2"/></svg><span>Bookings</span></button></div></nav><script>window.TRIP={"hotel":{"id":"hotel","name":"Island World Panglao","pid":"ChIJuZqktb2sqzMRBXB4A89hUG8","lat":9.55612,"lng":123.7771057},"places":[{"id":"hotel","name":"Island World Panglao","pid":"ChIJuZqktb2sqzMRBXB4A89hUG8","lat":9.55612,"lng":123.7771057,"cat":"stay","scene":"pool","hours":"Restaurant 5h30-21h30 · navette Alona 6h-22h","phone":"+63 956 008 2010","desc":"Notre hôtel, réservé et confirmé. Piscines, spa, restaurant. Le site de l'hôtel annonce une navette gratuite vers Alona de 6h00 à 22h00 et organise l'island hopping.","price":"Réservation confirmée","ps":"v","tags":["Confirmé"],"route":{"km":0,"mode":"—","time":"","cost":""}},{"id":"airport","name":"Bohol-Panglao International Airport","pid":"ChIJ_9qowcKtqzMR5z-7x4I8tj4","lat":9.5688783,"lng":123.7731154,"cat":"transport","scene":"plane","desc":"Arrivée lundi 15h40 (5J 615), départ jeudi 12h55 (5J 618). Pas de distributeur après la sécurité : venir avec des pesos.","price":"Transfert van ₱800 / trajet","ps":"v","route":{"km":2.0,"mode":"Tricycle (2 pour 6)","time":"~10 min","cost":"~₱100-150 par tricycle"},"tags":[],"hours":"","phone":""},{"id":"alona","name":"Alona Beach","pid":"ChIJp3TlMp-sqzMR4VhodDXL50g","lat":9.5485549,"lng":123.7740322,"cat":"beach","scene":"beach","hours":"Coucher du soleil vers 17h20","desc":"La plage animée de Panglao : sable blanc, restaurants les pieds dans l'eau, départ des bateaux. Mer plus calme le matin.","price":"Gratuit","ps":"v","route":{"km":1.2,"mode":"Navette de l'hôtel ou à pied","time":"16 min à pied","cost":"Gratuit"},"tags":[],"phone":""},{"id":"dumaluan","name":"Dumaluan Beach","pid":"ChIJ0VXMi0hTqjMRn1H2mjF5x_E","lat":9.556588,"lng":123.805318,"cat":"beach","scene":"beach2","desc":"Longue plage turquoise, bien plus calme qu'Alona. Idéale avec les enfants l'après-midi.","price":"Entrée ~₱25-50 / pers.","ps":"e","route":{"km":4.2,"mode":"Tricycle (2 pour 6)","time":"~17 min","cost":"~₱100-150 par tricycle"},"tags":[],"hours":"","phone":""},{"id":"virgin","name":"Virgin Island (banc de sable)","pid":"ChIJcRAtLi6tqzMRUe7G4mlDvCY","lat":9.5559947,"lng":123.7181924,"cat":"sea","scene":"sandbar","desc":"Banc de sable qui n'apparaît qu'à marée basse (mercredi 6h36). Eau peu profonde, étoiles de mer. Fixer le prix avant toute commande aux vendeurs.","price":"Entrée ₱50-200 / pers. selon les sources","ps":"e","route":{"km":8.7,"mode":"Bateau depuis Alona","time":"20-40 min","cost":"Inclus dans la sortie"},"tags":[],"hours":"","phone":""},{"id":"balicasag","name":"Balicasag Marine Sanctuary","pid":"ChIJsbxybwqpqzMRomjeU1lD6eQ","lat":9.5153103,"lng":123.6819463,"cat":"sea","scene":"reef","desc":"Sanctuaire marin : tortues, tombant de corail. Snorkeling de 30 min depuis une barque à pagaie avec un guide local.","price":"Forfait ~₱500 / pers. (entrée, guide, barque, masque)","ps":"e","route":{"km":15.4,"mode":"Bateau depuis Alona","time":"20-40 min","cost":"Inclus dans la sortie"},"tags":[],"hours":"","phone":""},{"id":"corella","name":"Philippine Tarsier Sanctuary (Corella)","pid":"ChIJiygR7CVJqjMRN6KOwTPZm78","lat":9.6907827,"lng":123.9526892,"cat":"sight","scene":"tarsier","hours":"8h30-15h30","desc":"Sanctuaire associatif, le plus respectueux des tarsiers. Visite guidée courte, en silence, sans flash.","price":"~₱80 / adulte (à confirmer)","ps":"e","route":{"km":32.9,"mode":"Van privé (journée campagne)","time":"~61 min","cost":"Inclus dans le van"},"tags":[],"phone":""},{"id":"bilar","name":"Bilar Man-Made Forest","pid":"ChIJV3MW-lhBqjMRYdXbTWLZk-8","lat":9.6672144,"lng":124.0845172,"cat":"sight","scene":"forest","desc":"Tunnel d'acajous de 2 km sur la route des Chocolate Hills. Arrêt photo.","price":"Gratuit","ps":"v","route":{"km":48.5,"mode":"Van privé (journée campagne)","time":"~88 min","cost":"Inclus dans le van"},"tags":[],"hours":"","phone":""},{"id":"choco","name":"Chocolate Hills Complex","pid":"ChIJ7bQymfgWqjMRsIML34Cnk_g","lat":9.7986441,"lng":124.1674637,"cat":"sight","scene":"hills","desc":"Plus de 1 200 collines coniques, vertes en saison des pluies. Environ 214 marches jusqu'au belvédère.","price":"₱150 adulte · ₱75 de 6 à 12 ans · gratuit jusqu'à 5 ans","ps":"v","route":{"km":68.3,"mode":"Van privé (journée campagne)","time":"~122 min","cost":"Inclus dans le van"},"tags":[],"hours":"","phone":""},{"id":"loboc","name":"Loboc River Floating Restaurant","pid":"ChIJfSILr29FqjMRxBius5_UAIo","lat":9.6357803,"lng":124.0300828,"cat":"food","scene":"river","hours":"10h-15h","phone":"+63 907 909 7977","desc":"Croisière-buffet sur la rivière avec musique et danses. Le buffet philippin contient en général du porc : choisir poisson, poulet et légumes.","price":"~₱1 000 / pers.","ps":"e","route":{"km":39.3,"mode":"Van privé (journée campagne)","time":"~72 min","cost":"Inclus dans le van"},"tags":[]},{"id":"baclayon","name":"Église de Baclayon","pid":"ChIJw_CRaj9OqjMRSbQIIGXN6uI","lat":9.6226237,"lng":123.9122193,"cat":"sight","scene":"church","hours":"Fermée le mardi et le dimanche","desc":"L'une des plus anciennes églises des Philippines. Mardi : arrêt photo de l'extérieur.","price":"Gratuit (musée ~₱150)","ps":"e","route":{"km":22.4,"mode":"Van privé (journée campagne)","time":"~43 min","cost":"Inclus dans le van"},"tags":[],"phone":""},{"id":"hinagdanan","name":"Hinagdanan Cave","pid":"ChIJNev-FVJNqjMRpk4oja6EHi4","lat":9.6254774,"lng":123.8009449,"cat":"sight","scene":"cave","hours":"8h-16h","desc":"Grotte avec lac souterrain où l'on peut se baigner. Le plan B idéal en cas de pluie.","price":"Entrée ~₱50-100 · baignade ~₱75-100","ps":"e","route":{"km":11.0,"mode":"Tricycle ou van","time":"~35 min","cost":"~₱300-500 l'aller"},"tags":[],"phone":""},{"id":"coralgarden","name":"Alona's Coral Garden","pid":"ChIJ5ZUKZJysqzMREDjCDv0haRg","lat":9.5496005,"lng":123.7671053,"cat":"transport","scene":"boat","hours":"Réception 6h-22h","phone":"+63 933 850 8420","desc":"Resort qui loue des bateaux et vend un forfait snorkeling. Le resort est réservé aux adultes : vérifier que les sorties acceptent les enfants.","price":"Bateau 6-12 pers. ₱4 000 · Balicasag ₱500 / pers.","ps":"v","route":{"km":1.8,"mode":"Tricycle (2 pour 6)","time":"~9 min","cost":"~₱100-150 par tricycle"},"tags":[]},{"id":"mahalo","name":"Mahalo Restaurant","pid":"ChIJEWG_rq6tqzMRj5JS5t5VjZM","lat":9.55094,"lng":123.77003,"cat":"brunch","scene":"pancakes","hours":"6h-22h","phone":"+63 956 863 4127","desc":"American breakfast, piles de pancakes, burgers. Ouvre tôt.","price":"~₱300-450 / pers.","ps":"e","route":{"km":1.3,"mode":"Navette de l'hôtel ou à pied","time":"17 min à pied","cost":"Gratuit"},"tags":[]},{"id":"coffeeforya","name":"Coffee For Ya","pid":"ChIJhUkPHwCtqzMRQZRKbWEpXUQ","lat":9.55091,"lng":123.7695,"cat":"brunch","scene":"coffee","hours":"6h30-20h","phone":"+63 969 623 9850","desc":"Pancakes à la banane, wraps, café signature à l'orange.","price":"~₱250-400 / pers.","ps":"e","route":{"km":1.4,"mode":"Navette de l'hôtel ou à pied","time":"18 min à pied","cost":"Gratuit"},"tags":[]},{"id":"craze","name":"CRAZE Artisan Café","pid":"ChIJbQhcjOmtqzMRjOWElezYm1k","lat":9.55861,"lng":123.77491,"cat":"brunch","scene":"bowl","hours":"7h-23h","desc":"Smoothie bowls, toasts, cafés et chocolat chaud. Le plus proche de l'hôtel.","price":"~₱300-450 / pers.","ps":"e","route":{"km":0.5,"mode":"À pied","time":"7 min","cost":"Gratuit"},"tags":[],"phone":""},{"id":"afe","name":"AFE Coffee & Brunch","pid":"ChIJd64IAQCtqzMRvGIii5z1m7g","lat":9.55299,"lng":123.77381,"cat":"brunch","scene":"coffee","hours":"7h30-21h","phone":"+63 956 538 3308","desc":"Petit café à l'étage, brunchs et lattes à l'ube.","price":"~₱250-400 / pers.","ps":"e","route":{"km":0.7,"mode":"À pied","time":"9 min","cost":"Gratuit"},"tags":[]},{"id":"shaka","name":"Shaka Panglao","pid":"ChIJf9cEEJisqzMRtTllqEy2rCY","lat":9.5531366,"lng":123.7736129,"cat":"brunch","scene":"bowl","hours":"8h-minuit","phone":"+63 950 752 6816","desc":"Cuisine végétale : smoothie bowls, noix de coco, burgers végétariens. Naturellement sans porc.","price":"~₱250-400 / pers.","ps":"e","route":{"km":0.7,"mode":"À pied","time":"9 min","cost":"Gratuit"},"tags":[]},{"id":"anc","name":"ANC Brunch Cafe","pid":"ChIJlVInUQCtqzMRkvQ2n-ZDFNc","lat":9.55896,"lng":123.77524,"cat":"brunch","scene":"pancakes","hours":"9h-21h","phone":"+63 935 918 3842","desc":"Café calme pour un brunch tardif, bols d'açaí.","price":"~₱300-450 / pers.","ps":"e","route":{"km":0.5,"mode":"À pied","time":"7 min","cost":"Gratuit"},"tags":[]},{"id":"blooming","name":"Blooming Angel Bakery Café","pid":"ChIJJfNmaQ2tqzMRJHaRzz1G1iA","lat":9.55167,"lng":123.77233,"cat":"brunch","scene":"coffee","hours":"9h-21h","phone":"+63 917 127 5568","desc":"Viennoiseries feuilletées, yaourts, cafés.","price":"~₱200-350 / pers.","ps":"e","route":{"km":1.0,"mode":"Navette de l'hôtel ou à pied","time":"13 min à pied","cost":"Gratuit"},"tags":[]},{"id":"napoleat","name":"Napoleat","pid":"ChIJDVv-NwCtqzMRofn0S2q5C0E","lat":9.55509,"lng":123.77414,"cat":"italian","scene":"pizza","hours":"10h-22h","phone":"+63 906 071 1986","desc":"Ristorante-pizzeria très apprécié. Plusieurs plats au jambon de Parme : choisir margherita ou fruits de mer.","price":"~₱400-650 / pers.","ps":"e","route":{"km":0.5,"mode":"À pied","time":"6 min","cost":"Gratuit"},"tags":[]},{"id":"atavola","name":"A Tavola","pid":"ChIJM4O21jVTqjMRgbWyRXYgk80","lat":9.55337,"lng":123.77396,"cat":"italian","scene":"pasta","hours":"10h-22h","phone":"+63 905 549 1619","desc":"Pizzas réputées et spaghetti maison, bon rapport qualité-prix.","price":"~₱350-600 / pers.","ps":"e","route":{"km":0.6,"mode":"À pied","time":"8 min","cost":"Gratuit"},"tags":[]},{"id":"giuseppe","name":"Giuseppe Pizzeria & Sicilian Roast","pid":"ChIJdWXTAL6sqzMRtWCe9aIRVho","lat":9.55794,"lng":123.7749,"cat":"italian","scene":"pizza","hours":"11h30-22h","phone":"+63 917 625 5582","desc":"Cuisine sicilienne authentique. Le « roast » est souvent du porc : demander.","price":"~₱450-700 / pers.","ps":"e","route":{"km":0.4,"mode":"À pied","time":"6 min","cost":"Gratuit"},"tags":[]},{"id":"toto","name":"Toto e Peppino","pid":"ChIJmWasl_StqzMRIAl66FWjRDM","lat":9.5527,"lng":123.77361,"cat":"italian","scene":"pizza","hours":"10h-22h30","phone":"+63 910 508 1315","desc":"Très bonne pâte, grandes portions. Beaucoup de pizzas avec charcuterie : préciser.","price":"~₱400-600 / pers.","ps":"e","route":{"km":0.7,"mode":"À pied","time":"10 min","cost":"Gratuit"},"tags":[]},{"id":"vanilla","name":"Vanilla Sky","pid":"ChIJ764mt5usqzMRljQ4Pa7xIsQ","lat":9.55055,"lng":123.7667,"cat":"italian","scene":"pasta","hours":"7h30-22h","phone":"+63 930 606 5364","desc":"Italien à mozzarella maison, aussi ouvert pour le petit-déjeuner.","price":"~₱450-700 / pers.","ps":"e","route":{"km":1.8,"mode":"Tricycle (2 pour 6)","time":"~9 min","cost":"~₱100-150 par tricycle"},"tags":[]},{"id":"seaku","name":"Seaku","pid":"ChIJ42WfJb2tqzMRZX1Pr6MPiXI","lat":9.55903,"lng":123.77534,"cat":"seafood","scene":"fish","hours":"11h30-21h","phone":"+63 920 253 8194","desc":"Cuisine côtière philippine moderne : kinilaw (ceviche), poisson grillé.","price":"~₱450-700 / pers.","ps":"e","route":{"km":0.5,"mode":"À pied","time":"7 min","cost":"Gratuit"},"tags":[]},{"id":"jumbo","name":"Jumbo Crab Bohol","pid":"ChIJIQ11dnGtqzMRUymZMaudN5M","lat":9.5535938,"lng":123.7737499,"cat":"seafood","scene":"crab","hours":"11h-22h","phone":"+63 966 155 9623","desc":"Crabe au poivre, crevettes. Prix au poids : demander le poids et le prix avant cuisson. Navette signalée par des clients.","price":"Prix du marché, ~₱600-1 000 / pers.","ps":"e","route":{"km":0.6,"mode":"À pied","time":"8 min","cost":"Gratuit"},"tags":[]},{"id":"jose","name":"Jose' Panglao","pid":"ChIJT_A3LuqtqzMRVNBJlqQ6IlE","lat":9.55427,"lng":123.7739,"cat":"seafood","scene":"fish","hours":"11h-22h30","phone":"+63 998 558 6501","desc":"Grillades philippines, plateaux de fruits de mer, ventrèche de thon. Carte avec porc : bien préciser.","price":"~₱350-550 / pers.","ps":"e","route":{"km":0.5,"mode":"À pied","time":"7 min","cost":"Gratuit"},"tags":[]},{"id":"lamoy","name":"Lamoy Restaurant","pid":"ChIJ2catrJCtqzMRUV8SKM2aW-o","lat":9.54997,"lng":123.77187,"cat":"seafood","scene":"shrimp","hours":"11h-22h","phone":"+63 919 519 1324","desc":"Le plus connu d'Alona : file d'attente le soir. Crevettes au poids (300 g minimum), cartes acceptées.","price":"~₱500-800 / pers.","ps":"e","route":{"km":1.2,"mode":"Navette de l'hôtel ou à pied","time":"16 min à pied","cost":"Gratuit"},"tags":[]},{"id":"no1","name":"No.1 Seafood Restaurant","pid":"ChIJL3Z_uvatqzMRem1Y4OKKvaU","lat":9.54993,"lng":123.77196,"cat":"seafood","scene":"crab","hours":"10h-22h","phone":"+63 995 883 1266","desc":"On choisit son crabe au poids. Crevettes au jaune d'œuf salé, soupe de mérou.","price":"~₱500-800 / pers.","ps":"e","route":{"km":1.2,"mode":"Navette de l'hôtel ou à pied","time":"16 min à pied","cost":"Gratuit"},"tags":[]},{"id":"redcrab","name":"Redcrab Bohol","pid":"ChIJwXLl8autqzMRbHcGHQ0l9BE","lat":9.5516827,"lng":123.7674356,"cat":"seafood","scene":"crab","hours":"11h-22h","phone":"+63 966 154 8228","desc":"Crabe au poivre noir, gambas, salle climatisée. Prise en charge gratuite via KakaoTalk « Red Crab Bohol ». Menu crevettes ~₱690 (avis client).","price":"~₱500-800 / pers.","ps":"e","route":{"km":1.6,"mode":"Navette de l'hôtel ou à pied","time":"21 min à pied","cost":"Gratuit"},"tags":[]},{"id":"kajun","name":"Kajun Bohol","pid":"ChIJKwnfhS6tqzMRLpXd4Qnp4kY","lat":9.55125,"lng":123.77242,"cat":"burger","scene":"burger","hours":"11h-23h","phone":"+63 38 411 6541","desc":"Américain-cajun, présenté comme 100 % halal : burgers, poulet frit, fruits de mer. La meilleure option sans porc. Fish burger : à demander.","price":"~₱350-550 / pers.","ps":"e","tags":["Halal"],"route":{"km":1.0,"mode":"Navette de l'hôtel ou à pied","time":"13 min à pied","cost":"Gratuit"}},{"id":"smoking","name":"Smoking Griddle","pid":"ChIJ5Rxzbp-tqzMRDnuCgskKpCk","lat":9.55356,"lng":123.77397,"cat":"burger","scene":"burger","hours":"14h-22h","desc":"Burgers et steaks très appréciés.","price":"~₱350-600 / pers.","ps":"e","route":{"km":0.6,"mode":"À pied","time":"8 min","cost":"Gratuit"},"tags":[],"phone":""},{"id":"burgerbros","name":"Burger Bros","pid":"ChIJWa48RgCtqzMRip8X4hhglzw","lat":9.55097,"lng":123.77002,"cat":"burger","scene":"burger","hours":"11h-22h","phone":"+63 936 951 2856","desc":"Burgers généreux à petit prix.","price":"~₱250-400 / pers.","ps":"e","route":{"km":1.3,"mode":"Navette de l'hôtel ou à pied","time":"17 min à pied","cost":"Gratuit"},"tags":[]},{"id":"amorita","name":"Amorita Resort (Saffron)","pid":"ChIJT2NHr6KsqzMRURd62L5U2NY","lat":9.5494926,"lng":123.7775339,"cat":"beachfront","scene":"sunset","hours":"6h-22h","phone":"+63 38 502 9002","desc":"Restaurant sur la falaise d'Alona, souvent avec un groupe live. Notre dîner d'adieu : réserver.","price":"~₱1 000-1 500 / pers.","ps":"e","route":{"km":1.0,"mode":"Navette de l'hôtel ou à pied","time":"13 min à pied","cost":"Gratuit"},"tags":[]},{"id":"tarana","name":"Tarana","pid":"ChIJNbniIiGtqzMRc1HErV4oTFg","lat":9.54787,"lng":123.77014,"cat":"beachfront","scene":"beachtable","hours":"11h-22h","phone":"+63 960 630 4138","desc":"Les pieds dans le sable face à la mer, plateaux de fruits de mer.","price":"~₱450-700 / pers.","ps":"e","route":{"km":1.6,"mode":"Navette de l'hôtel ou à pied","time":"21 min à pied","cost":"Gratuit"},"tags":[]},{"id":"oasis","name":"Oasis Restaurant & Beach Club","pid":"ChIJE1WAZQCtqzMRnN-pXy2qyhk","lat":9.54857,"lng":123.77285,"cat":"beachfront","scene":"beachtable","hours":"7h-22h30","desc":"En bord de plage à Alona, du petit-déjeuner au dîner. Smoothies, pad thaï, tacos.","price":"~₱400-650 / pers.","ps":"e","route":{"km":1.3,"mode":"Navette de l'hôtel ou à pied","time":"17 min à pied","cost":"Gratuit"},"tags":[],"phone":""},{"id":"escape","name":"Escape, Alona Beach Bar","pid":"ChIJkSFjzsCtqzMRSb4cwcPKIe8","lat":9.54859,"lng":123.77289,"cat":"beachfront","scene":"sunset","hours":"8h-2h","phone":"+63 919 361 2280","desc":"Terrasse face au coucher du soleil, ambiance musicale (bar).","price":"~₱300-500 / pers.","ps":"e","route":{"km":1.3,"mode":"Navette de l'hôtel ou à pied","time":"17 min à pied","cost":"Gratuit"},"tags":[]},{"id":"saltsky","name":"Salt & Sky Rooftop","pid":"ChIJ-3b8yGqtqzMR1iPwxTsGy2w","lat":9.54773,"lng":123.75198,"cat":"beachfront","scene":"sunset","hours":"15h-23h","phone":"+63 38 417 4026","desc":"Toit-terrasse de l'hôtel Solea avec vue sur la mer et le coucher du soleil.","price":"~₱500-900 / pers.","ps":"e","route":{"km":3.9,"mode":"Tricycle (2 pour 6)","time":"~16 min","cost":"~₱100-150 par tricycle"},"tags":[]},{"id":"haru","name":"Haru Seaside Restaurant","pid":"ChIJn-bbrpatqzMRrSmU_Jiw1Ic","lat":9.5474,"lng":123.75222,"cat":"beachfront","scene":"beachtable","hours":"8h-21h","phone":"+63 995 105 3669","desc":"Restaurant coréen en bord de mer, pâtes aux crevettes, fruits de mer.","price":"~₱500-800 / pers.","ps":"e","route":{"km":3.9,"mode":"Tricycle (2 pour 6)","time":"~16 min","cost":"~₱100-150 par tricycle"},"tags":[]},{"id":"beefarm","name":"Bohol Bee Farm","pid":"ChIJ_____9xSqjMRIDZu57H5Pj8","lat":9.575738,"lng":123.8271114,"cat":"beachfront","scene":"cliff","hours":"6h-21h","phone":"+63 917 304 1491","desc":"Ferme bio sur la falaise : pain et tartinades offerts, glace au charbon, vue sur la mer.","price":"~₱500-800 / pers.","ps":"e","route":{"km":8.0,"mode":"Tricycle ou van","time":"~27 min","cost":"~₱300-500 l'aller"},"tags":[]},{"id":"bellevue","name":"The Bellevue Resort","pid":"ChIJpZ355spSqjMRTihZzp9v-tM","lat":9.5877044,"lng":123.7307949,"cat":"beachfront","scene":"cliff","desc":"Premier établissement certifié halal de Bohol (cuisine dédiée). Plage privée. Appeler avant.","price":"~₱900-1 500 / pers.","ps":"e","tags":["Halal certifié"],"route":{"km":8.3,"mode":"Tricycle ou van","time":"~28 min","cost":"~₱300-500 l'aller"},"hours":"","phone":""},{"id":"avocado","name":"Avocado BodySpa","pid":"ChIJTaS0o7qtqzMRMz1cRBrbI3Y","lat":9.55372,"lng":123.77407,"cat":"spa","scene":"spa","hours":"12h-23h","phone":"+63 927 466 4006","desc":"Massages des pieds et du corps, accueil chaleureux. À 8 minutes à pied.","price":"À demander","ps":"e","route":{"km":0.6,"mode":"À pied","time":"8 min","cost":"Gratuit"},"tags":[]},{"id":"thaimoon","name":"Thai Moon Body Massage & Spa","pid":"ChIJ1xchTNqtqzMRpyxj9PbB5Y8","lat":9.55322,"lng":123.77339,"cat":"spa","scene":"spa","hours":"10h30-minuit","phone":"+63 926 701 4968","desc":"Salle calme et propre, recommandée par des résidents.","price":"À demander","ps":"e","route":{"km":0.7,"mode":"À pied","time":"9 min","cost":"Gratuit"},"tags":[]},{"id":"luna","name":"Luna Tiger Spa (Alona)","pid":"ChIJh3EWcACtqzMRy7cL4jpj6Ok","lat":9.5508332,"lng":123.7721449,"cat":"spa","scene":"spa","hours":"13h-23h","phone":"+63 915 804 6673","desc":"Cadre soigné, réputé pour le massage des pieds à l'huile de tigre.","price":"Pieds ~₱1 200","ps":"e","route":{"km":1.1,"mode":"Navette de l'hôtel ou à pied","time":"14 min à pied","cost":"Gratuit"},"tags":[]},{"id":"alonazen","name":"Alona Zen Spa","pid":"ChIJE8KdPgCtqzMRa9t1wVAM8FQ","lat":9.55101,"lng":123.77145,"cat":"spa","scene":"spa","hours":"11h-23h","phone":"+63 927 993 0352","desc":"Massages corps et pieds à prix doux. Avis mitigés.","price":"1 h ₱600 · 1 h 30 ₱900","ps":"e","route":{"km":1.1,"mode":"Navette de l'hôtel ou à pied","time":"15 min à pied","cost":"Gratuit"},"tags":[]},{"id":"thairoyale","name":"Thai Royale Spa Panglao","pid":"ChIJhcP01MZNqjMRKVwV8n6Uh08","lat":9.550489,"lng":123.7713266,"cat":"spa","scene":"spa","hours":"13h-1h","phone":"+63 962 308 1960","desc":"Suédois ou thaï, pierres chaudes. Tarifs publiés sur leur site officiel.","price":"1 h ₱600 · 1 h 30 ₱849 · pierres ₱800","ps":"v","route":{"km":1.2,"mode":"Navette de l'hôtel ou à pied","time":"16 min à pied","cost":"Gratuit"},"tags":[]},{"id":"yeon","name":"The Yeon Spa","pid":"ChIJj5ugBcutqzMR037zIWagl1E","lat":9.55294,"lng":123.76469,"cat":"spa","scene":"spa","hours":"10h-23h30","phone":"+63 915 198 0730","desc":"Récent et très propre, douche chaude après le massage.","price":"Huile 1 h ~₱800","ps":"e","route":{"km":1.9,"mode":"Tricycle (2 pour 6)","time":"~9 min","cost":"~₱100-150 par tricycle"},"tags":[]}],"cats":{"brunch":"Breakfast & Brunch","italian":"Pizza & Pasta","seafood":"Fish & Seafood","burger":"Fish Burgers","beachfront":"Beachfront","spa":"Massage & Spa"},"days":[{"n":1,"date":"2026-10-26","label":"Lun. 26","title":"Arrivée & coucher de soleil","theme":"coral","scene":"beach","budget":{"eco":650,"conf":917},"items":[{"t":"14:05","k":"move","title":"Vol Manille → Panglao · 5J 615","note":"Arrivée 15h40. Déjeuner à Manille avant le vol.","place":"airport","status":"ok"},{"t":"15:50","k":"move","title":"Transfert à l'hôtel","note":"≈ 2 km, 5 min. Navette de l'hôtel (à confirmer), sinon van ₱800 (prix vérifié).","place":"airport","cost":"~₱135 / pers. en van","status":"todo"},{"t":"16:15","k":"rest","title":"Check-in & piscine","note":"Confirmer la navette, le petit-déjeuner de 5h30 mercredi et le bateau.","place":"hotel"},{"t":"17:00","k":"beach","title":"Alona Beach au coucher du soleil","note":"Navette ou 15 min à pied. Soleil couchant vers 17h20.","place":"alona"},{"t":"17:45","k":"dinner","title":"Dîner les pieds dans le sable","note":"Plateaux de fruits de mer face à la mer. Alternatives : Lamoy, No.1 Seafood.","place":"tarana","alt":["lamoy","no1"],"cost":"~₱450-700 / pers."},{"t":"20:30","k":"move","title":"Retour à l'hôtel","note":"Navette jusqu'à 22h00 ou 15 min à pied.","place":"hotel"}]},{"n":2,"date":"2026-10-27","label":"Mar. 27","title":"La campagne de Bohol","theme":"leaf","scene":"hills","budget":{"eco":1983,"conf":3542},"items":[{"t":"07:00","k":"breakfast","title":"Petit-déjeuner à l'hôtel","note":"Restaurant ouvert dès 5h30. Inclus dans la réservation ? À vérifier.","place":"hotel"},{"t":"08:00","k":"move","title":"Départ en van privé avec chauffeur","note":"Van 12 places ₱3 500 pour 7 à 8 h, chauffeur-guide et carburant compris (prix vérifié). Demander un siège enfant.","cost":"₱583 / pers.","status":"todo"},{"t":"09:00","k":"visit","title":"Tarsiers de Corella","note":"≈ 1 h de route. Visite guidée, en silence.","place":"corella","cost":"~₱80 / adulte"},{"t":"10:45","k":"visit","title":"Forêt d'acajous de Bilar","note":"Arrêt photo sur la route.","place":"bilar"},{"t":"11:15","k":"visit","title":"Chocolate Hills","note":"~214 marches. ₱600 pour notre groupe (prix vérifié).","place":"choco","cost":"₱150 / ₱75 / gratuit"},{"t":"12:45","k":"lunch","title":"Croisière-buffet sur la rivière Loboc","note":"Option. Buffet avec porc : bien choisir. Autre solution : déjeuner simple aux Chocolate Hills.","place":"loboc","cost":"~₱1 000 / pers."},{"t":"14:15","k":"visit","title":"Église de Baclayon (extérieur)","note":"Fermée le mardi : arrêt photo.","place":"baclayon"},{"t":"15:30","k":"rest","title":"Retour & piscine","place":"hotel"},{"t":"17:00","k":"spa","title":"Massages à tour de rôle","note":"À 8 min à pied, ou le spa de l'hôtel.","place":"avocado","alt":["thairoyale","luna"]},{"t":"18:30","k":"dinner","title":"Pizza & pâtes","note":"À 6-8 min à pied.","place":"napoleat","alt":["atavola"],"cost":"~₱400-600 / pers."}]},{"n":3,"date":"2026-10-28","label":"Mer. 28","title":"Island hopping & dîner d'adieu","theme":"sea","scene":"reef","budget":{"eco":2283,"conf":4033},"items":[{"t":"05:30","k":"breakfast","title":"Petit-déjeuner express","note":"Restaurant de l'hôtel dès 5h30. Prévoir eau et en-cas pour le bateau.","place":"hotel"},{"t":"05:50","k":"move","title":"Navette jusqu'à Alona Beach","note":"Départ à Danao si la sortie se fait avec Alona's Coral Garden.","place":"alona"},{"t":"06:00","k":"sea","title":"Bateau privé pour 6","note":"Prestataire et prix : voir Bookings.","cost":"~₱1 050-1 370 / pers.","status":"todo"},{"t":"06:30","k":"sea","title":"Virgin Island à marée basse","note":"Marée la plus basse à 6h36 : banc de sable visible.","place":"virgin"},{"t":"07:30","k":"sea","title":"Dauphins","note":"Au large, tôt le matin. Fréquents mais jamais garantis."},{"t":"08:30","k":"sea","title":"Snorkeling à Balicasag","note":"Tortues et tombant de corail, 30 min dans l'eau.","place":"balicasag"},{"t":"11:45","k":"lunch","title":"Déjeuner près de l'hôtel","note":"Poisson grillé et kinilaw, ou burgers halal.","place":"seaku","alt":["kajun","jumbo"]},{"t":"13:00","k":"rest","title":"Sieste & piscine","note":"Créneau où les orages sont les plus probables.","place":"hotel"},{"t":"15:00","k":"beach","title":"Dumaluan Beach","note":"Plage calme et turquoise. 2 tricycles, prix à fixer avant.","place":"dumaluan","cost":"~₱100 / pers."},{"t":"17:15","k":"dinner","title":"Dîner d'adieu au coucher du soleil","note":"Réserver au +63 38 502 9002. Alternatives : Salt & Sky, Bellevue (halal certifié).","place":"amorita","alt":["saltsky","bellevue"],"cost":"~₱1 000-1 500 / pers.","status":"todo"}]},{"n":4,"date":"2026-10-29","label":"Jeu. 29","title":"Brunch & départ","theme":"dusk","scene":"plane","budget":{"eco":417,"conf":633},"items":[{"t":"07:00","k":"breakfast","title":"Brunch pancakes","note":"Ouvre à 6h00. Plus près : CRAZE (7h00), ou l'hôtel.","place":"mahalo","alt":["craze"]},{"t":"08:30","k":"rest","title":"Piscine","note":"Marée très basse à 7h24 : la mer à Alona est peu profonde.","place":"hotel"},{"t":"10:30","k":"rest","title":"Check-out","note":"Limite 12h00.","place":"hotel"},{"t":"10:45","k":"move","title":"Transfert à l'aéroport","note":"Navette de l'hôtel (à confirmer) ou van ₱800. Partir au plus tard à 11h15.","place":"airport","status":"todo"},{"t":"12:55","k":"move","title":"Vol Panglao → Manille · 5J 618","note":"Arrivée 14h35 à NAIA.","place":"airport","status":"ok"}]}],"budget":[{"label":"Transfert aéroport → hôtel","cat":"Transports","day":1,"eco":400,"conf":800,"s":"v"},{"label":"Dîner (Tarana / Lamoy)","cat":"Repas","day":1,"eco":2700,"conf":3600,"s":"e"},{"label":"En-cas, eau","cat":"Repas","day":1,"eco":600,"conf":600,"s":"e"},{"label":"Divers","cat":"Divers","day":1,"eco":200,"conf":500,"s":"e"},{"label":"Van privé campagne","cat":"Transports","day":2,"eco":3500,"conf":5500,"s":"v"},{"label":"Entrées campagne","cat":"Excursions","day":2,"eco":1000,"conf":1000,"s":"e"},{"label":"Déjeuner (simple / Loboc)","cat":"Repas","day":2,"eco":2100,"conf":6000,"s":"e"},{"label":"Dîner italien","cat":"Repas","day":2,"eco":2700,"conf":4200,"s":"e"},{"label":"En-cas, eau","cat":"Repas","day":2,"eco":600,"conf":600,"s":"e"},{"label":"Massages (3 adultes)","cat":"Massages","day":2,"eco":1800,"conf":3450,"s":"v"},{"label":"Divers","cat":"Divers","day":2,"eco":200,"conf":500,"s":"e"},{"label":"Island hopping (bateau + frais)","cat":"Excursions","day":3,"eco":7200,"conf":9200,"s":"e"},{"label":"Dumaluan (entrée)","cat":"Excursions","day":3,"eco":300,"conf":300,"s":"e"},{"label":"Tricycles Dumaluan A/R","cat":"Transports","day":3,"eco":600,"conf":1000,"s":"e"},{"label":"Déjeuner","cat":"Repas","day":3,"eco":2100,"conf":3000,"s":"e"},{"label":"Dîner d'adieu","cat":"Repas","day":3,"eco":2700,"conf":9000,"s":"e"},{"label":"En-cas, eau","cat":"Repas","day":3,"eco":600,"conf":1200,"s":"e"},{"label":"Divers","cat":"Divers","day":3,"eco":200,"conf":500,"s":"e"},{"label":"Brunch","cat":"Repas","day":4,"eco":2100,"conf":3000,"s":"e"},{"label":"Transfert hôtel → aéroport","cat":"Transports","day":4,"eco":400,"conf":800,"s":"v"}],"options":[{"id":"shuttle","label":"Navette aéroport gratuite de l'hôtel (si confirmée)","eco":-800,"conf":-1600,"default":false},{"id":"breakfast","label":"Petits-déjeuners non inclus (~₱300 / pers. / jour)","eco":5400,"conf":5400,"default":false},{"id":"cave","label":"Hinagdanan Cave avec baignade (plan B)","eco":1050,"conf":1050,"default":false}],"bookings":[{"id":"flights","title":"Vols Cebu Pacific","when":"Lun. 26 et jeu. 29","status":"ok","summary":"5J 615 MNL → TAG 14h05-15h40 · 5J 618 TAG → MNL 12h55-14h35 · PNR CHBGRP","providers":[]},{"id":"hotel","title":"Island World Panglao","when":"26 → 29 oct. · 3 nuits","status":"ok","summary":"Réservé par ta sœur pour 3 adultes et 3 enfants. Check-in 14h, check-out 12h.","providers":[{"name":"Island World Panglao","rec":true,"desc":"Contact pour la navette, l'island hopping et le petit-déjeuner.","meet":"Purok 7, Tawala","price1":"—","price6":"—","incl":"Navette gratuite vers Alona 6h-22h (site de l'hôtel)","contacts":["+63 956 008 2010"],"url":"https://www.island.world/","place":"hotel"}]},{"id":"van","title":"Van privé · campagne","when":"Mardi 27 · 8h00 → 15h30","status":"todo","deadline":"Aujourd'hui","summary":"Corella → Bilar → Chocolate Hills → Loboc → Baclayon. Les entrées des sites ne sont pas incluses.","providers":[{"name":"Bohol Car Van Rentals","rec":true,"desc":"Van 12 places climatisé, chauffeur-guide, 7 à 8 h. Grandia premium ₱5 500.","meet":"Prise en charge à l'hôtel","price1":"₱583","price6":"₱3 500","ps":"v","incl":"Van privé, chauffeur-guide, carburant, prise en charge à l'hôtel. Non inclus : entrées, buffet de Loboc.","cancel":"Acompte et annulation non publiés : à demander.","contacts":["WhatsApp +63 926 710 3220","Viber 0910 612 3168","boholcarvanrentals@gmail.com"],"url":"https://wa.me/639267103220","site":"https://boholcarvanrentals.com/"},{"name":"Wow Bohol Tours","desc":"Van ₱3 500, 8 h maximum, puis ₱350 par heure. Grille en ligne ancienne.","meet":"Prise en charge à l'hôtel","price1":"₱583","price6":"₱3 500","ps":"e","incl":"Van, chauffeur, carburant (forfait campagne).","cancel":"Non publié.","contacts":["+63 939 919 2390","+63 917 624 5799","tourswowbohol@gmail.com"],"url":"https://wowboholtours.com/bohol-car-rental/"},{"name":"Panglao Island Tours","desc":"Tour privé « Signature » $73/pers. (min. 2) ou collectif « Premium » $35/pers.","meet":"Prise en charge vers 7h30, retour vers 16h30","price1":"$73 ≈ ₱4 530","price6":"≈ ₱27 000","ps":"v","incl":"Van, chauffeur, coordinateur.","cancel":"Annulation gratuite jusqu'à 24 h avant.","contacts":["WhatsApp +63 966 031 0847"],"url":"https://www.panglaoislandtours.com/"}]},{"id":"transfer","title":"Transferts aéroport","when":"Lun. 15h40 · jeu. 10h45","status":"todo","deadline":"Aujourd'hui","summary":"≈ 2 km, 5 min. Pas de taxi à compteur, et Grab n'est pas fiable à Bohol.","providers":[{"name":"Navette Island World","rec":true,"desc":"Des clients récents mentionnent une navette gratuite vers l'aéroport.","meet":"Sortie des arrivées","price1":"Gratuit ?","price6":"Gratuit ?","ps":"e","incl":"À confirmer par téléphone.","cancel":"—","contacts":["+63 956 008 2010"],"url":"https://www.island.world/"},{"name":"Bohol Car Van Rentals","desc":"Van 12 places, aller simple.","meet":"Arrivées de l'aéroport (TAG)","price1":"₱133","price6":"₱800 / trajet","ps":"v","incl":"Van, chauffeur, carburant.","cancel":"À demander.","contacts":["WhatsApp +63 926 710 3220"],"url":"https://wa.me/639267103220"},{"name":"Sur place à l'aéroport","desc":"Prix affichés rapportés fin 2025 : van 1-8 pers. ₱800, voiture 1-3 pers. ₱700. Tricycles à la sortie : ₱150-300 l'un, à négocier.","meet":"Sortie de l'aéroport","price1":"₱133","price6":"₱800","ps":"e","incl":"—","cancel":"—","contacts":[],"url":""}]},{"id":"boat","title":"Island hopping privé","when":"Mercredi 28 · 6h00 → 11h00","status":"todo","deadline":"Lundi soir","summary":"Virgin Island (marée basse 6h36), dauphins, tortues de Balicasag. Ne payer que si le bateau part.","providers":[{"name":"Island World (hôtel)","rec":true,"desc":"Sortie privée avec leurs bateliers, environ 6h-11h.","meet":"Hôtel, puis navette vers Alona","price1":"?","price6":"Devis à demander","ps":"e","incl":"Bateau et équipage ; frais des îles à préciser.","cancel":"À demander. Pas d'acompte non remboursable.","contacts":["+63 956 008 2010"],"url":"https://www.island.world/"},{"name":"Alona's Coral Garden","desc":"Bateau 6-12 pers. ₱4 000 + forfait Balicasag ₱500/pers. Resort réservé aux adultes : vérifier pour les enfants.","meet":"Kalipayan Beach Rd, Danao","price1":"~₱1 170","price6":"~₱7 000 + Virgin Island","ps":"v","incl":"Forfait : entrée, frais environnementaux, guide, barque à pagaie, masque, 30 min.","cancel":"Réserver 24 h avant. Conditions sur leur page « Policies ».","contacts":["WhatsApp +63 933 850 8420","reservations@alonascoralgarden.com"],"url":"https://wa.me/639338508420","place":"coralgarden"},{"name":"Bohol Car Van Rentals","desc":"Location du bateau 6-10 pers., départ zone d'Alona. Frais des îles en plus.","meet":"Alona Beach","price1":"₱500","price6":"₱3 000 + frais","ps":"v","incl":"Bateau et équipage.","cancel":"À demander.","contacts":["WhatsApp +63 926 710 3220"],"url":"https://wa.me/639267103220"},{"name":"GetYourGuide · sortie privée","desc":"Island hopping privé avec snorkeling, dès ~$111 (≈ ₱6 900). Base de prix à vérifier.","meet":"Indiqué sur l'offre","price1":"selon offre","price6":"dès ≈ ₱6 900","ps":"e","incl":"Selon l'offre.","cancel":"Conditions de l'offre ; une autre date ou un remboursement proposé en cas de mauvais temps sur certaines offres.","contacts":[],"url":"https://www.getyourguide.com/panglao-l217868/bohol-panglao-island-hopping-tour-with-snorkeling-private-t745676/"}]},{"id":"dinner","title":"Dîner d'adieu · Amorita","when":"Mercredi 28 · 17h15","status":"todo","deadline":"Lundi soir","summary":"Table pour 6 face au coucher du soleil, plats sans porc.","providers":[{"name":"Amorita Resort (Saffron)","rec":true,"desc":"Restaurant sur la falaise d'Alona, souvent avec un groupe live.","meet":"Amorita Resort, Alona","price1":"~₱1 000-1 500","price6":"~₱6 000-9 000","ps":"e","incl":"—","cancel":"—","contacts":["+63 38 502 9002"],"url":"","place":"amorita"}]},{"id":"spa","title":"Massages","when":"Mardi 27 · 17h00","status":"later","deadline":"Le jour même","summary":"Appeler 1 à 2 h avant. Thai Royale publie ses tarifs : ₱600 l'heure.","providers":[{"name":"Thai Royale Spa","rec":true,"desc":"Suédois ou thaï 1 h ₱600 · 1 h 30 ₱849.","meet":"2/F One Neem Place, Tawala","price1":"₱600","price6":"₱1 800 (3 adultes)","ps":"v","incl":"Massage 1 h.","cancel":"—","contacts":["+63 962 308 1960"],"url":"https://www.thairoyalespabohol.com/luxury-spa-in-alona","place":"thairoyale"}]}],"checklist":[{"group":"Aujourd'hui","items":[{"id":"call_hotel","label":"Appeler l'hôtel : navette aéroport, petit-déjeuner, devis bateau"},{"id":"book_van","label":"Réserver le van de mardi 8h00 (WhatsApp +63 926 710 3220)"},{"id":"transfer","label":"Organiser les transferts aéroport (lundi 15h40, jeudi 10h45)"},{"id":"cash","label":"Retirer ~₱25 000 en petites coupures"}]},{"group":"Lundi soir","items":[{"id":"book_boat","label":"Réserver le bateau de mercredi 6h00 (Virgin Island en premier)"},{"id":"weather","label":"Vérifier la météo PAGASA, inverser mardi et mercredi si besoin"},{"id":"book_dinner","label":"Réserver le dîner d'adieu à l'Amorita (+63 38 502 9002)"}]},{"group":"Confirmé","items":[{"id":"flights_ok","label":"Vols 5J 615 / 5J 618 · PNR CHBGRP"},{"id":"hotel_ok","label":"Island World Panglao, 26-29 oct."}]},{"group":"Dans le sac","items":[{"id":"p_cash","label":"Pesos en espèces"},{"id":"p_sun","label":"Crème solaire respectueuse des récifs"},{"id":"p_hat","label":"Chapeaux, lunettes, t-shirts anti-UV"},{"id":"p_swim","label":"Maillots et serviettes"},{"id":"p_shoes","label":"Chaussures d'eau"},{"id":"p_dry","label":"Sac étanche pour les téléphones"},{"id":"p_umb","label":"Parapluie ou K-way"},{"id":"p_med","label":"Médicaments contre le mal de mer"},{"id":"p_snack","label":"En-cas et gourdes"}]},{"group":"Sécurité en mer","items":[{"id":"s_vest","label":"Gilets de sauvetage pour les 3 enfants, vérifiés avant le départ"},{"id":"s_turtle","label":"Ne pas toucher les tortues ni les coraux, garder 2 m de distance"},{"id":"s_cancel","label":"Ne payer que si le bateau part (sorties suspendues par mauvais temps)"},{"id":"s_sun","label":"Crème solaire 30 min avant, retouche après le snorkeling"},{"id":"s_water","label":"Eau pour tout le monde, la sortie dure 5 h"}]}],"info":{"weather":[["Lun. 26","Averses l'après-midi, orage isolé le soir","31-32°","5h05 · 16h39"],["Mar. 27","Orages possibles surtout tôt","32°","5h50 · 17h00"],["Mer. 28","Soleil et nuages, 1-2 orages possibles","32°","6h36 · 17h17"],["Jeu. 29","Partiellement ensoleillé, averses","32-33°","7h24 · 17h28"]],"contacts":[["Island World Panglao","+63 956 008 2010"],["Bohol Car Van Rentals","+63 926 710 3220"],["Alona's Coral Garden","+63 933 850 8420"],["Wow Bohol Tours","+63 939 919 2390"],["Panglao Island Tours","+63 966 031 0847"],["Amorita (dîner)","+63 38 502 9002"],["Redcrab Bohol","+63 966 154 8228"],["Thai Royale Spa","+63 962 308 1960"],["Urgences","911"]],"planb":[["hinagdanan","Grotte avec lac souterrain, 8h-16h"],["beefarm","Déjeuner bio sur la falaise"],["thairoyale","Spa l'après-midi, puis piscine"]],"sources":[["Island World Panglao","https://www.island.world/"],["Bohol Car Van Rentals","https://boholcarvanrentals.com/"],["Alona's Coral Garden","https://www.alonascoralgarden.com/services"],["Panglao Island Tours","https://www.panglaoislandtours.com/"],["Suroy.ph – Chocolate Hills","https://suroy.ph/chocolate-hills-bohol/"],["Lakbaypinas – Corella","https://lakbaypinas.com/tarsier-sanctuary-corella-bohol-diy-travel-guide/"],["Tide-forecast Panglao","https://www.tide-forecast.com/locations/Panglao/tides/latest"],["AccuWeather Panglao","https://www.accuweather.com/en/ph/panglao/262355/10-day-weather-forecast/262355"],["PAGASA","https://www.pagasa.dost.gov.ph/"],["Thai Royale Spa","https://www.thairoyalespabohol.com/luxury-spa-in-alona"],["Miss Khae – Kajun halal","https://misskhae.com/where-to-eat-in-panglao-bohol/"]]},"totals":{"eco":32000,"conf":54750},"updated":"25 octobre 2026"};window.TRIP_SHARE_URL="";window.TRIP_PWA=true;</script><script>/* Illustrated scenes (flat tropical style) — one per place type. Self-contained SVG, no external images. */
+var SCN = (function () {
+  var n = 0;
+  function uid() { return "g" + (++n); }
+  function lg(id, stops, x2, y2) {
+    return '<linearGradient id="' + id + '" x1="0" y1="0" x2="' + (x2 || 0) + '" y2="' + (y2 == null ? 1 : y2) + '">' +
+      stops.map(function (s, i) { return '<stop offset="' + (i / (stops.length - 1)) + '" stop-color="' + s + '"/>'; }).join("") + "</linearGradient>";
+  }
+  function wrap(defs, body) {
+    return '<svg class="sc" viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs>' + defs + "</defs>" + body + "</svg>";
+  }
+  function palm(x, y, s, c) {
+    c = c || "#123A33";
+    var t = '<path d="M' + x + " " + y + " C" + (x + 6 * s) + " " + (y - 40 * s) + " " + (x + 2 * s) + " " + (y - 80 * s) + " " + (x + 14 * s) + " " + (y - 118 * s) + '" stroke="' + c + '" stroke-width="' + 6 * s + '" fill="none" stroke-linecap="round"/>';
+    var hx = x + 14 * s, hy = y - 118 * s, L = "";
+    [-150, -110, -60, -20, 20, 200].forEach(function (a) {
+      L += '<ellipse cx="' + hx + '" cy="' + hy + '" rx="' + 38 * s + '" ry="' + 7 * s + '" fill="' + c + '" transform="rotate(' + a + " " + hx + " " + hy + ") translate(" + 30 * s + ' 0)"/>';
+    });
+    return t + L;
+  }
+  function waves(y, c, o) {
+    var p = "", i;
+    for (i = 0; i < 5; i++) p += '<path d="M0 ' + (y + i * 12) + " q25 -5 50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0 t50 0" + '" stroke="' + c + '" stroke-opacity="' + (o - i * .05) + '" stroke-width="2" fill="none"/>';
+    return p;
+  }
+  function cloud(x, y, s) { return '<g fill="#fff" opacity=".85"><ellipse cx="' + x + '" cy="' + y + '" rx="' + 26 * s + '" ry="' + 10 * s + '"/><ellipse cx="' + (x + 16 * s) + '" cy="' + (y - 7 * s) + '" rx="' + 16 * s + '" ry="' + 10 * s + '"/></g>'; }
+  function plate(cx, cy, r, c) { return '<ellipse cx="' + cx + '" cy="' + (cy + 6) + '" rx="' + (r + 6) + '" ry="' + (r * .5 + 4) + '" fill="#000" opacity=".12"/><circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="' + (c || "#FBF7F0") + '"/><circle cx="' + cx + '" cy="' + cy + '" r="' + (r - 10) + '" fill="none" stroke="#E7DFD2" stroke-width="2"/>'; }
+  function table(bg1, bg2) { var a = uid(); return [lg(a, [bg1, bg2], 1, 1), '<rect width="400" height="250" fill="url(#' + a + ')"/><g opacity=".14" fill="#fff"><circle cx="40" cy="40" r="70"/><circle cx="370" cy="220" r="90"/></g>']; }
+
+  var S = {
+    beach: function () { var a = uid(), b = uid(); return wrap(lg(a, ["#FFC98B", "#F58A64", "#B85C7A"]) + lg(b, ["#2F8FA0", "#15586A"]),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/><circle cx="270" cy="128" r="34" fill="#FFE3A3"/><rect y="140" width="400" height="70" fill="url(#' + b + ')"/>' + waves(150, "#FFE3A3", .5) +
+      '<path d="M0 205 Q120 185 260 200 T400 196 V250 H0Z" fill="#F4D7A8"/>' + palm(60, 230, 1.1) + palm(110, 240, .8)); },
+    beach2: function () { var a = uid(), b = uid(); return wrap(lg(a, ["#8FD8F0", "#E3F7FA"]) + lg(b, ["#3CC6C0", "#1C93A3"]),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/>' + cloud(80, 50, 1) + cloud(300, 36, .8) + '<rect y="120" width="400" height="80" fill="url(#' + b + ')"/>' + waves(132, "#ffffff", .45) +
+      '<path d="M0 190 Q140 170 400 186 V250 H0Z" fill="#F7E7C4"/>' + palm(340, 230, 1, "#1D5A44")); },
+    sandbar: function () { var a = uid(); return wrap(lg(a, ["#55D3CB", "#1D8FA6"], 1, 1),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/><g opacity=".25" stroke="#fff" fill="none" stroke-width="2"><ellipse cx="200" cy="140" rx="190" ry="70"/><ellipse cx="200" cy="140" rx="160" ry="55"/></g>' +
+      '<path d="M40 150 Q200 80 360 140 Q220 120 40 150Z" fill="#FBEFD6"/><path d="M60 148 Q200 100 340 140" stroke="#fff" stroke-width="3" fill="none" opacity=".7"/>' +
+      '<g transform="translate(250 175)"><path d="M0 0 h60 l-8 10 h-44z" fill="#E9563E"/><path d="M-20 6 h100" stroke="#5B3A2A" stroke-width="2"/><path d="M30 0 V-34 L52 -2Z" fill="#fff"/></g>' +
+      '<circle cx="120" cy="190" r="5" fill="#F06A4C"/><circle cx="150" cy="200" r="4" fill="#F6A93B"/>'); },
+    reef: function () { var a = uid(); return wrap(lg(a, ["#2BA6C2", "#0D4A66", "#082E44"]),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/><g fill="#fff" opacity=".08"><path d="M60 0 L100 0 L40 250 L0 250Z"/><path d="M190 0 L230 0 L180 250 L130 250Z"/><path d="M320 0 L350 0 L330 250 L290 250Z"/></g>' +
+      '<g transform="translate(180 105) rotate(-12)"><ellipse rx="56" ry="38" fill="#4E7F3F"/><g fill="#6E9D4F"><path d="M-30 -14 L0 -26 L30 -14 L22 14 L-22 14Z"/></g><ellipse cx="66" cy="-4" rx="18" ry="13" fill="#7BA864"/><circle cx="72" cy="-8" r="2.5" fill="#123"/>' +
+      '<ellipse cx="28" cy="-38" rx="26" ry="9" fill="#7BA864" transform="rotate(-30 28 -38)"/><ellipse cx="28" cy="38" rx="26" ry="9" fill="#7BA864" transform="rotate(30 28 38)"/><ellipse cx="-50" cy="-26" rx="14" ry="6" fill="#7BA864" transform="rotate(30 -50 -26)"/><ellipse cx="-50" cy="26" rx="14" ry="6" fill="#7BA864" transform="rotate(-30 -50 26)"/></g>' +
+      '<g><circle cx="40" cy="240" r="40" fill="#E9765C"/><circle cx="90" cy="250" r="30" fill="#F6A93B"/><circle cx="330" cy="246" r="44" fill="#C85A8E"/><circle cx="380" cy="230" r="26" fill="#E9765C"/></g>' +
+      '<g fill="#fff" opacity=".6"><circle cx="300" cy="80" r="4"/><circle cx="310" cy="60" r="3"/><circle cx="304" cy="42" r="2"/></g>' +
+      '<g fill="#FFC75A"><path d="M60 120 l14 -6 l0 12z M74 120 a10 6 0 1 0 0 .1"/></g>'); },
+    hills: function () { var a = uid(); var h = "", i, cols = ["#6C8F3A", "#7EA24A", "#5E7F30", "#8BAE52"]; for (i = 0; i < 9; i++) { var x = i * 52 - 20, w = 70 + (i % 3) * 10, ht = 70 + (i % 4) * 12; h += '<path d="M' + x + " 200 Q" + (x + w / 2) + " " + (200 - ht * 1.6) + " " + (x + w) + ' 200Z" fill="' + cols[i % 4] + '"/>'; }
+      var h2 = ""; for (i = 0; i < 7; i++) { var x2 = i * 66 - 10; h2 += '<path d="M' + x2 + " 250 Q" + (x2 + 45) + " 140 " + (x2 + 90) + ' 250Z" fill="' + (i % 2 ? "#4F7128" : "#5D8030") + '"/>'; }
+      return wrap(lg(a, ["#BFE6EE", "#F4E9C6"]), '<rect width="400" height="250" fill="url(#' + a + ')"/>' + cloud(90, 45, 1) + cloud(290, 60, .7) + '<g opacity=".6">' + h + "</g>" + h2); },
+    tarsier: function () { var a = uid(); return wrap(lg(a, ["#163A2E", "#0B1F19"]),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/><g fill="#2C5A3F" opacity=".7"><circle cx="40" cy="30" r="60"/><circle cx="370" cy="40" r="70"/><circle cx="200" cy="-10" r="60"/></g>' +
+      '<path d="M0 200 Q200 170 400 210" stroke="#6B4A2E" stroke-width="14" fill="none" stroke-linecap="round"/>' +
+      '<g transform="translate(200 140)"><ellipse cx="0" cy="34" rx="34" ry="30" fill="#A8845E"/><circle r="40" fill="#B89270"/><circle cx="-38" cy="-26" r="13" fill="#B89270"/><circle cx="38" cy="-26" r="13" fill="#B89270"/>' +
+      '<circle cx="-16" cy="-2" r="17" fill="#2B1A0D"/><circle cx="16" cy="-2" r="17" fill="#2B1A0D"/><circle cx="-16" cy="-2" r="12" fill="#D9A23A"/><circle cx="16" cy="-2" r="12" fill="#D9A23A"/><circle cx="-16" cy="-2" r="6" fill="#120A04"/><circle cx="16" cy="-2" r="6" fill="#120A04"/><circle cx="-12" cy="-6" r="2.5" fill="#fff"/><circle cx="20" cy="-6" r="2.5" fill="#fff"/>' +
+      '<path d="M-28 58 q-10 8 -24 6 M28 58 q10 8 24 6" stroke="#8C6A48" stroke-width="7" stroke-linecap="round" fill="none"/></g>'); },
+    forest: function () { var a = uid(), t = "", i; for (i = 0; i < 9; i++) { var x = 20 + i * 45 + (i % 2) * 8; t += '<rect x="' + x + '" y="20" width="' + (10 + (i % 3) * 3) + '" height="220" fill="#3E2B1E" opacity="' + (.6 + (i % 3) * .12) + '"/>'; }
+      return wrap(lg(a, ["#2F6B3C", "#9BC48A"]), '<rect width="400" height="250" fill="url(#' + a + ')"/><g fill="#1F4F2B" opacity=".8"><circle cx="40" cy="20" r="70"/><circle cx="150" cy="0" r="80"/><circle cx="270" cy="10" r="80"/><circle cx="380" cy="20" r="70"/></g>' + t +
+        '<path d="M170 250 L195 140 L205 140 L230 250Z" fill="#7C7A6F"/><path d="M199 250 L200 140" stroke="#F2E7B9" stroke-width="2" stroke-dasharray="8 8"/>'); },
+    river: function () { var a = uid(); return wrap(lg(a, ["#CFEDE2", "#E7F4DD"]),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/><path d="M0 70 Q100 40 200 70 T400 60 V120 H0Z" fill="#3E7F45"/><path d="M0 120 H400 V170 Q300 160 200 175 T0 170Z" fill="#4D9DA0"/>' + waves(132, "#fff", .4) +
+      '<path d="M0 170 Q200 160 400 172 V250 H0Z" fill="#2E6A36"/>' + palm(40, 140, .7, "#1F4A28") + palm(350, 130, .6, "#1F4A28") +
+      '<g transform="translate(130 112)"><rect width="140" height="16" rx="3" fill="#8E5B35"/><rect x="10" y="-26" width="120" height="6" fill="#C6493A"/><rect x="14" y="-20" width="4" height="20" fill="#5B3A22"/><rect x="122" y="-20" width="4" height="20" fill="#5B3A22"/><rect x="68" y="-20" width="4" height="20" fill="#5B3A22"/><g fill="#F6A93B"><circle cx="40" cy="-8" r="5"/><circle cx="96" cy="-8" r="5"/></g></g>'); },
+    church: function () { var a = uid(); return wrap(lg(a, ["#A8D8EA", "#F1E9D2"]),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/>' + cloud(320, 40, .9) + '<rect x="120" y="90" width="150" height="140" fill="#B8A88A"/><path d="M110 92 L195 40 L280 92Z" fill="#A39374"/>' +
+      '<rect x="270" y="60" width="50" height="170" fill="#A9997B"/><rect x="282" y="78" width="26" height="30" rx="13" fill="#5E513C"/><path d="M265 62 L295 36 L325 62Z" fill="#8F8064"/>' +
+      '<rect x="172" y="160" width="46" height="70" rx="23" fill="#4F4332"/><g fill="#9C8C6E"><rect x="135" y="110" width="16" height="22"/><rect x="240" y="110" width="16" height="22"/></g><rect y="228" width="400" height="22" fill="#7C9A5A"/>' + palm(60, 240, .8, "#2C5B33")); },
+    cave: function () { var a = uid(); return wrap(lg(a, ["#1A2A2E", "#0A1416"]),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/><path d="M150 0 L250 0 L300 250 L100 250Z" fill="#F8F2D8" opacity=".12"/><ellipse cx="200" cy="10" rx="40" ry="14" fill="#F6EBC2" opacity=".7"/>' +
+      '<ellipse cx="200" cy="205" rx="170" ry="38" fill="#1E8C97"/><ellipse cx="200" cy="200" rx="120" ry="22" fill="#3FC2C4" opacity=".6"/>' +
+      '<g fill="#2C3B3E"><path d="M0 0 L40 0 L30 70Z"/><path d="M70 0 L100 0 L86 50Z"/><path d="M300 0 L330 0 L318 60Z"/><path d="M350 0 L400 0 L380 90Z"/></g>'); },
+    pool: function () { var a = uid(); return wrap(lg(a, ["#FFD9A0", "#F6A97E"]),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/><rect x="30" y="120" width="340" height="110" rx="18" fill="#2FB3C2"/>' + waves(140, "#fff", .45) +
+      '<rect x="40" y="190" width="70" height="10" rx="4" fill="#fff"/><rect x="290" y="190" width="70" height="10" rx="4" fill="#fff"/>' + palm(360, 130, .9, "#1E5946") + palm(20, 130, .8, "#1E5946") +
+      '<circle cx="200" cy="60" r="26" fill="#FFF0C4"/>'); },
+    plane: function () { var a = uid(); return wrap(lg(a, ["#7FC6E6", "#E4F3F8"]),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/>' + cloud(70, 180, 1.4) + cloud(320, 60, 1.1) + cloud(250, 200, .9) +
+      '<g transform="translate(200 110) rotate(-12)" fill="#fff"><ellipse rx="80" ry="12"/><path d="M-10 0 L-40 -50 L-24 -50 L20 0Z"/><path d="M-10 0 L-40 50 L-24 50 L20 0Z"/><path d="M-70 0 L-84 -24 L-74 -24 L-58 0Z"/><circle cx="-30" cy="-2" r="2" fill="#7FC6E6"/><circle cx="-18" cy="-2" r="2" fill="#7FC6E6"/><circle cx="-6" cy="-2" r="2" fill="#7FC6E6"/><circle cx="6" cy="-2" r="2" fill="#7FC6E6"/></g>'); },
+    boat: function () { var a = uid(); return wrap(lg(a, ["#9AE0E6", "#2AA7B5"]),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/>' + waves(150, "#fff", .5) +
+      '<g transform="translate(110 130)"><path d="M0 20 Q90 50 180 20 L170 36 Q90 60 10 36Z" fill="#fff"/><path d="M10 30 Q90 52 170 30" stroke="#2F7DBF" stroke-width="5" fill="none"/>' +
+      '<rect x="40" y="-14" width="100" height="6" fill="#2F7DBF"/><rect x="50" y="-8" width="4" height="30" fill="#5B3A22"/><rect x="126" y="-8" width="4" height="30" fill="#5B3A22"/>' +
+      '<path d="M-30 46 H210" stroke="#3A2A1F" stroke-width="3"/><path d="M20 22 L-10 46 M160 22 L190 46" stroke="#3A2A1F" stroke-width="3"/></g>'); },
+    sunset: function () { var a = uid(); return wrap(lg(a, ["#FFB869", "#F06A4C", "#5E2E5A"]),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/><circle cx="250" cy="150" r="38" fill="#FFE1A0"/><rect y="150" width="400" height="100" fill="#3B2848" opacity=".55"/>' + waves(162, "#FFE1A0", .45) +
+      '<path d="M0 120 Q60 110 120 130 L150 250 H0Z" fill="#2B1C33"/><g fill="#2B1C33"><rect x="200" y="214" width="120" height="6"/><rect x="214" y="220" width="5" height="30"/><rect x="300" y="220" width="5" height="30"/><path d="M210 180 h18 v34 h-4 v-30 h-14z M300 180 h-18 v34 h4 v-30 h14z"/></g>'); },
+    beachtable: function () { var a = uid(); return wrap(lg(a, ["#FFCF94", "#F7A26B"]),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/><rect y="120" width="400" height="60" fill="#2C93A5"/>' + waves(128, "#FFE6B5", .5) + '<path d="M0 175 Q200 160 400 176 V250 H0Z" fill="#F3D7A6"/>' +
+      '<g transform="translate(200 120)"><path d="M-70 0 Q0 -50 70 0Z" fill="#EE6448"/><path d="M-70 0 Q-35 -14 0 0 Q35 -14 70 0" fill="#F6A93B"/><rect x="-2" y="0" width="4" height="90" fill="#6B4A2E"/><ellipse cx="0" cy="92" rx="50" ry="10" fill="#fff"/><rect x="-40" y="92" width="4" height="30" fill="#6B4A2E"/><rect x="36" y="92" width="4" height="30" fill="#6B4A2E"/></g>' + palm(50, 235, .9)); },
+    cliff: function () { var a = uid(); return wrap(lg(a, ["#A6E1F2", "#E7F7F4"]),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/><rect y="150" width="400" height="100" fill="#2CA0B2"/>' + waves(162, "#fff", .5) +
+      '<path d="M220 250 L240 120 Q300 100 400 110 V250Z" fill="#7C8F55"/><path d="M240 125 Q300 106 400 114 V128 Q300 120 245 140Z" fill="#5F7A3E"/><g transform="translate(300 80)"><rect width="60" height="36" fill="#F7EFE0"/><path d="M-6 2 L30 -22 L66 2Z" fill="#C65A3D"/><rect x="24" y="14" width="12" height="22" fill="#6B4A2E"/></g>' + cloud(90, 60, 1)); },
+    pizza: function () { var t = table("#F2B66A", "#E07A4E"); var c = 200, y = 128; return wrap(t[0], t[1] + plate(c, y, 92) +
+      '<circle cx="' + c + '" cy="' + y + '" r="74" fill="#E9B45E"/><circle cx="' + c + '" cy="' + y + '" r="64" fill="#D8492F"/><g fill="#F7E6B5"><circle cx="175" cy="105" r="12"/><circle cx="225" cy="110" r="11"/><circle cx="190" cy="150" r="12"/><circle cx="232" cy="150" r="10"/><circle cx="200" cy="128" r="9"/></g><g fill="#3E7A35"><ellipse cx="185" cy="125" rx="6" ry="3"/><ellipse cx="215" cy="135" rx="6" ry="3" transform="rotate(40 215 135)"/><ellipse cx="208" cy="95" rx="6" ry="3"/></g><g stroke="#E9B45E" stroke-width="2"><path d="M200 54 V202 M136 128 H264"/></g>'); },
+    pasta: function () { var t = table("#9ED3C4", "#4E9E90"); var p = "", i; for (i = 0; i < 9; i++) p += '<path d="M' + (150 + i * 11) + " 110 q" + (10 - i * 2) + " 20 " + (i * 3 - 10) + ' 40" stroke="#F3D27A" stroke-width="5" fill="none" stroke-linecap="round"/>';
+      return wrap(t[0], t[1] + plate(200, 128, 92) + '<ellipse cx="200" cy="130" rx="62" ry="50" fill="#F3D27A"/>' + p + '<g fill="#D8492F"><circle cx="180" cy="118" r="8"/><circle cx="220" cy="140" r="8"/><circle cx="212" cy="108" r="6"/></g><g fill="#3E7A35"><ellipse cx="196" cy="128" rx="8" ry="4"/></g>'); },
+    fish: function () { var t = table("#8FD0E0", "#3C8FA8"); return wrap(t[0], t[1] + '<ellipse cx="200" cy="140" rx="140" ry="62" fill="#000" opacity=".12"/><ellipse cx="200" cy="132" rx="136" ry="60" fill="#FBF7F0"/>' +
+      '<path d="M110 132 Q190 80 270 132 Q190 184 110 132Z" fill="#C9874E"/><path d="M270 132 L310 104 L302 132 L310 160Z" fill="#B57643"/><circle cx="135" cy="126" r="5" fill="#2B1A0D"/><g stroke="#8A5530" stroke-width="3"><path d="M170 108 L160 156 M195 104 L185 160 M220 106 L210 158 M245 114 L238 150"/></g>' +
+      '<g fill="#F6D44C"><path d="M285 170 a14 14 0 1 1 28 0z"/></g><g fill="#3E7A35"><ellipse cx="120" cy="170" rx="12" ry="5"/><ellipse cx="140" cy="176" rx="10" ry="4"/></g>'); },
+    crab: function () { var t = table("#F7B08A", "#D9583F"); return wrap(t[0], t[1] + plate(200, 136, 92) +
+      '<ellipse cx="200" cy="140" rx="54" ry="38" fill="#E04A2F"/><g stroke="#E04A2F" stroke-width="7" stroke-linecap="round" fill="none"><path d="M150 140 l-26 -10 M150 152 l-28 6 M150 164 l-22 16 M250 140 l26 -10 M250 152 l28 6 M250 164 l22 16"/></g>' +
+      '<g fill="#E04A2F"><path d="M160 112 Q130 80 150 70 Q170 76 168 96Z"/><path d="M240 112 Q270 80 250 70 Q230 76 232 96Z"/></g><circle cx="186" cy="118" r="5" fill="#2B1A0D"/><circle cx="214" cy="118" r="5" fill="#2B1A0D"/>'); },
+    shrimp: function () { var t = table("#FFC48C", "#EE7B4E"); var s = "", i; for (i = 0; i < 3; i++) s += '<g transform="translate(' + (150 + i * 50) + " " + (125 + (i % 2) * 18) + ')"><path d="M0 0 a26 26 0 1 1 26 26" stroke="#F06A4C" stroke-width="14" fill="none" stroke-linecap="round"/><path d="M26 26 l12 10 l-2 -14z" fill="#F06A4C"/></g>';
+      return wrap(t[0], t[1] + plate(200, 136, 92) + s + '<g fill="#F6D44C"><path d="M150 180 a12 12 0 1 1 24 0z"/></g>'); },
+    burger: function () { var t = table("#FFD27A", "#F08A3E"); return wrap(t[0], t[1] + '<ellipse cx="200" cy="200" rx="110" ry="16" fill="#000" opacity=".14"/>' +
+      '<path d="M110 120 Q200 30 290 120Z" fill="#E1A04A"/><g fill="#FBF0D0"><ellipse cx="170" cy="95" rx="4" ry="2"/><ellipse cx="200" cy="82" rx="4" ry="2"/><ellipse cx="230" cy="96" rx="4" ry="2"/></g>' +
+      '<path d="M104 124 Q130 140 150 124 Q175 140 200 124 Q225 140 250 124 Q275 140 296 124 V132 H104Z" fill="#5FA845"/><rect x="104" y="132" width="192" height="18" rx="6" fill="#F3C44A"/><rect x="108" y="148" width="184" height="24" rx="10" fill="#C9874E"/>' +
+      '<path d="M110 172 H290 Q290 196 200 196 Q110 196 110 172Z" fill="#E1A04A"/>'); },
+    pancakes: function () { var t = table("#F9D8A6", "#E9A15C"); var s = "", i; for (i = 0; i < 5; i++) s += '<ellipse cx="200" cy="' + (175 - i * 16) + '" rx="78" ry="18" fill="' + (i % 2 ? "#E0A25A" : "#D6944C") + '"/>';
+      return wrap(t[0], t[1] + plate(200, 168, 100) + s + '<path d="M130 105 Q200 85 270 105 Q262 130 250 118 Q230 132 214 116 Q196 136 182 116 Q160 128 140 116Z" fill="#9B4E1F"/><rect x="185" y="86" width="30" height="16" rx="3" fill="#FFF3C2"/><g fill="#C9364A"><circle cx="160" cy="98" r="7"/><circle cx="244" cy="100" r="6"/></g>'); },
+    coffee: function () { var t = table("#D9B996", "#9C6A45"); return wrap(t[0], t[1] + '<ellipse cx="200" cy="190" rx="80" ry="18" fill="#FBF7F0"/><path d="M146 100 H254 L244 186 Q200 200 156 186Z" fill="#fff"/><ellipse cx="200" cy="100" rx="54" ry="12" fill="#6B3E22"/><path d="M180 98 Q200 88 220 98 Q200 108 180 98Z" fill="#E9CBA7"/>' +
+      '<path d="M254 116 Q290 116 284 146 Q278 168 248 164" stroke="#fff" stroke-width="10" fill="none"/><g stroke="#fff" stroke-width="4" fill="none" opacity=".7" stroke-linecap="round"><path d="M185 76 q-8 -12 0 -24 M205 72 q-8 -12 0 -24 M225 76 q-8 -12 0 -24"/></g><g fill="#C9874E"><ellipse cx="96" cy="170" rx="34" ry="14"/><ellipse cx="96" cy="164" rx="30" ry="10" fill="#E2A65E"/></g>'); },
+    bowl: function () { var t = table("#C9E8B8", "#6FB38A"); return wrap(t[0], t[1] + '<ellipse cx="200" cy="200" rx="110" ry="14" fill="#000" opacity=".12"/><path d="M100 120 H300 Q300 200 200 200 Q100 200 100 120Z" fill="#fff"/><ellipse cx="200" cy="120" rx="100" ry="26" fill="#8E3E7E"/>' +
+      '<g><circle cx="160" cy="114" r="12" fill="#F7E07A"/><circle cx="185" cy="122" r="10" fill="#F06A4C"/><circle cx="215" cy="112" r="11" fill="#F6A93B"/><circle cx="240" cy="122" r="9" fill="#5FA845"/><circle cx="200" cy="128" r="7" fill="#fff"/><ellipse cx="140" cy="122" rx="12" ry="6" fill="#F6E3B0"/><ellipse cx="258" cy="112" rx="12" ry="6" fill="#F6E3B0"/></g>'); },
+    spa: function () { var a = uid(); return wrap(lg(a, ["#CDEBE2", "#8FC9B9"], 1, 1),
+      '<rect width="400" height="250" fill="url(#' + a + ')"/><g opacity=".2" fill="#fff"><circle cx="60" cy="50" r="70"/><circle cx="350" cy="210" r="80"/></g>' +
+      '<g transform="translate(200 190)"><ellipse rx="70" ry="20" fill="#3E4A47"/><ellipse cy="-30" rx="56" ry="17" fill="#55625E"/><ellipse cy="-56" rx="42" ry="14" fill="#6B7975"/><ellipse cy="-78" rx="28" ry="10" fill="#83908B"/></g>' +
+      '<path d="M250 110 Q300 60 330 100 Q290 130 250 110Z" fill="#3E8E5A"/><path d="M250 110 Q290 92 330 100" stroke="#2A6B42" stroke-width="2" fill="none"/>' +
+      '<g fill="#F7F1E2"><circle cx="120" cy="80" r="9"/><circle cx="105" cy="92" r="7"/><circle cx="134" cy="92" r="7"/><circle cx="120" cy="100" r="6" fill="#F6A93B"/></g>'); },
+  };
+  S.dolphin = S.boat;
+  return function (name) { return (S[name] || S.beach2)(); };
+})();
+</script><script>(function () {
+  "use strict";
+  var D = window.TRIP;
+  var SHARE_URL = window.TRIP_SHARE_URL || "";
+  var IS_PWA = !!window.TRIP_PWA;
+  var byId = {}; D.places.forEach(function (p) { byId[p.id] = p; });
+  var H = byId.hotel;
+
+  /* ---------- utils ---------- */
+  var store = {
+    get: function (k, d) { try { var v = localStorage.getItem("pt26:" + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+    set: function (k, v) { try { localStorage.setItem("pt26:" + k, JSON.stringify(v)); } catch (e) { } }
+  };
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function $(s, r) { return (r || document).querySelector(s); }
+  function peso(n) { return "₱" + Math.round(n).toLocaleString("fr-FR").replace(/\s/g, " "); }
+  function mapsUrl(p) { return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(p.name) + "&query_place_id=" + p.pid; }
+  function travelMode(p) { var m = p.route.mode || ""; return /pied|Navette/.test(m) ? "walking" : "driving"; }
+  function dirUrl(p) {
+    return "https://www.google.com/maps/dir/?api=1&origin=" + encodeURIComponent(H.name) + "&origin_place_id=" + H.pid +
+      "&destination=" + encodeURIComponent(p.name) + "&destination_place_id=" + p.pid + "&travelmode=" + travelMode(p);
+  }
+  function km(p) { var k = p.route.km; return k < 1 ? Math.round(k * 1000 / 50) * 50 + " m" : (k + "").replace(".", ",") + " km"; }
+  function distKm(a, b) {
+    var R = 6371, toR = Math.PI / 180, x = (b.lng - a.lng) * toR * Math.cos((a.lat + b.lat) / 2 * toR), y = (b.lat - a.lat) * toR;
+    return R * Math.hypot(x, y);
+  }
+  var ICON = {
+    home: '<path d="M3 11.5 12 4l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/>',
+    cal: '<rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/>',
+    compass: '<circle cx="12" cy="12" r="8.5"/><path d="m15.5 8.5-2 5-5 2 2-5z"/>',
+    food: '<path d="M7 3v8a2 2 0 0 0 2 2v8M5 3v5M9 3v5M16 21V3c2.2 1 3.5 3.4 3.5 6.5S18 13 16 13"/>',
+    ticket: '<path d="M4 7a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-3a2 2 0 0 0 0-4z"/><path d="M14 5v14" stroke-dasharray="2 2"/>',
+    wallet: '<rect x="3" y="6" width="18" height="14" rx="3"/><path d="M16 13h2M3 9h18"/>',
+    check: '<rect x="3.5" y="3.5" width="17" height="17" rx="4"/><path d="m8 12 3 3 5-6"/>',
+    info: '<circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8h.01"/>',
+    share: '<path d="M12 15V3M8 7l4-4 4 4M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/>',
+    phone: '<rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/>',
+    map: '<path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/>',
+    route: '<circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h7a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h7"/>',
+    back: '<path d="M15 5 8 12l7 7"/>',
+    close: '<path d="M6 6l12 12M18 6 6 18"/>',
+    wa: '<path d="M4 20l1.4-4A8 8 0 1 1 8 18.6z"/><path d="M9 9.5c.3 2 1.8 3.7 4 4.5l1-1.2 2 .8c-.2 1.1-1 1.8-2 1.8-3.6-.3-6.3-3-6.6-6.6 0-1 .7-1.8 1.8-2l.8 2z"/>',
+    rain: '<path d="M7 17a4.5 4.5 0 1 1 1.3-8.8A5.5 5.5 0 0 1 19 10a3.5 3.5 0 0 1-1 7z"/><path d="M9 20l-1 2M13 20l-1 2M17 20l-1 2"/>'
+  };
+  function ico(n, cls) { return '<svg class="' + (cls || "ico") + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICON[n] + "</svg>"; }
+  var KIND = {
+    breakfast: ["Petit-déj.", "var(--mango)", "coffee"], lunch: ["Déjeuner", "var(--coral)", "fish"], dinner: ["Dîner", "var(--coral)", "sunset"],
+    move: ["Trajet", "#5B7BC0", "plane"], visit: ["Visite", "#6E9440", "hills"], sea: ["En mer", "var(--glass)", "boat"],
+    beach: ["Plage", "var(--glass)", "beach2"], rest: ["Détente", "#8E7BB5", "pool"], spa: ["Massage", "#8E7BB5", "spa"]
+  };
+  var STATUS = { ok: ["Confirmé", "p-ok"], todo: ["À réserver", "p-todo"], wait: ["En attente", "p-wait"], later: ["Sur place", "p-info"] };
+  function pic(key) { return IS_PWA ? '<img class="ph-img" src="photos/' + key + '.jpg" alt="" loading="lazy" onerror="this.remove()">' : ""; }
+  function pill(st) { var s = STATUS[st] || STATUS.todo; return '<span class="pill ' + s[1] + '">' + s[0] + "</span>"; }
+  function ps(s) { return s === "v" ? '<span class="pill p-v">Prix vérifié</span>' : '<span class="pill p-e">Estimé</span>'; }
+
+  var toastT;
+  function toast(msg) { var t = $("#toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toastT); toastT = setTimeout(function () { t.classList.remove("on"); }, 2200); }
+  function copyText(text, el) {
+    function fallback() {
+      if (el) { var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); }
+      toast("Texte sélectionné : appuyez pour copier");
+    }
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { toast("Copié : " + text); }, fallback);
+      else fallback();
+    } catch (e) { fallback(); }
+  }
+  function shareLink() {
+    var url = SHARE_URL || location.href.split("#")[0];
+    if (navigator.share) {
+      navigator.share({ title: "Panglao Trip 2026", text: "Notre programme à Panglao, 26-29 octobre", url: url })
+        .then(function () { }, function (e) { if (!e || e.name !== "AbortError") copyText(url); });
+    } else copyText(url);
+  }
+  function contactHTML(c) {
+    var m = c.match(/(\+?[\d][\d\s]{6,}\d)/), val = m ? m[1] : (c.match(/\S+@\S+/) || [c])[0];
+    return '<span class="copy"><code>' + esc(c) + '</code><button type="button" data-copy="' + esc(val) + '">Copier</button></span>';
+  }
+
+  /* ---------- time ---------- */
+  var DEP = Date.UTC(2026, 9, 26, 6, 5); // 14:05 Manila
+  var END = Date.UTC(2026, 9, 29, 15, 59); // 23:59 Manila on Oct 29
+  function manilaNow() { return new Date(Date.now() + 8 * 3600e3); }
+  function tripState() {
+    var now = Date.now(), m = manilaNow(), y = m.getUTCFullYear(), mo = m.getUTCMonth(), d = m.getUTCDate();
+    if (now > END) return { phase: "after", day: 3 };
+    if (y === 2026 && mo === 9 && d >= 26 && d <= 29) return { phase: now < DEP ? "dayof" : "during", day: d - 26 };
+    return { phase: "before", day: 0 };
+  }
+
+  /* ---------- router ---------- */
+  var TITLES = { home: "Panglao Trip 2026", days: "Programme", explore: "Explore", food: "Food & Relax", bookings: "Bookings", budget: "Budget", checklist: "Checklist", infos: "Infos pratiques", install: "Installer & partager" };
+  var TABS = ["home", "days", "explore", "food", "bookings"];
+  var cur = "home", state = { day: tripState().day, food: "brunch", filter: "all", mode: store.get("mode", "eco") };
+  function show(v, opt) {
+    if (!TITLES[v]) v = "home";
+    cur = v;
+    document.querySelectorAll(".view").forEach(function (el) { el.classList.toggle("on", el.id === "v-" + v); });
+    document.querySelectorAll(".tab").forEach(function (el) { if (el.dataset.go === v) el.setAttribute("aria-current", "page"); else el.removeAttribute("aria-current"); });
+    $("#ttl").textContent = TITLES[v];
+    $("#back").hidden = TABS.indexOf(v) >= 0;
+    render(v);
+    if (!opt || !opt.keepScroll) window.scrollTo(0, 0);
+    try { var tok = v === "home" ? "accueil" : v === "days" ? "jour" + (state.day + 1) : v; history.replaceState(null, "", "#" + tok); } catch (e) { }
+  }
+  function render(v) { ({ home: rHome, days: rDays, explore: rExplore, food: rFood, bookings: rBookings, budget: rBudget, checklist: rCheck, infos: rInfos, install: rInstall })[v](); }
+
+  /* ---------- home ---------- */
+  var cdTimer;
+  function countdownHTML() {
+    var st = tripState();
+    if (st.phase === "before" || st.phase === "dayof") {
+      var ms = Math.max(0, DEP - Date.now()), d = Math.floor(ms / 864e5), h = Math.floor(ms % 864e5 / 36e5), mi = Math.floor(ms % 36e5 / 6e4);
+      return '<div><div class="lbl">Avant le décollage</div><div class="big">5J 615 · 14h05</div></div><div class="cells num">' +
+        '<div class="cell"><b>' + d + '</b><small>jours</small></div><div class="cell"><b>' + h + '</b><small>h</small></div><div class="cell"><b>' + mi + "</b><small>min</small></div></div>";
+    }
+    if (st.phase === "during") { var day = D.days[st.day]; return '<div><div class="lbl">On y est</div><div class="big">Jour ' + (st.day + 1) + " sur 4</div></div>" + '<div style="margin-left:auto;text-align:right;font-weight:600">' + esc(day.label) + "<br><span style=\"color:var(--mute);font-size:13px\">" + esc(day.title) + "</span></div>"; }
+    return '<div><div class="lbl">Séjour terminé</div><div class="big">Salamat, Panglao !</div></div>';
+  }
+  function rHome() {
+    var st = tripState(), day = D.days[st.phase === "before" ? 0 : st.day];
+    var todo = D.bookings.filter(function (b) { return bkStatus(b) === "todo"; });
+    var tiles = [["days", "cal", "Programme", "var(--lagoon)"], ["explore", "compass", "Explore", "#5B7BC0"], ["food", "food", "Food & Relax", "var(--coral)"], ["bookings", "ticket", "Bookings", "#8E7BB5"],
+      ["budget", "wallet", "Budget", "#6E9440"], ["checklist", "check", "Checklist", "var(--mango)"], ["infos", "rain", "Météo & infos", "#3E8FA8"], ["install", "phone", "Installer", "var(--ink)"]];
+    var items = day.items.slice(0, 5).map(function (it) {
+      var k = KIND[it.k] || KIND.rest;
+      return '<button class="prow" type="button" data-goday="' + (day.n - 1) + '"><span class="t num">' + it.t.replace(":", "h") + '</span><span class="x"><b>' + esc(it.title) + "</b><span>" + k[0] + (it.place && byId[it.place] ? " · " + esc(byId[it.place].name) : "") + "</span></span></button>";
+    }).join("");
+    $("#v-home").innerHTML =
+      '<section class="hero">' + SCN("beach") + pic("hero") + '<div class="shade"></div><div class="in"><div class="eyebrow">Bohol · Philippines · 6 voyageurs</div>' +
+      "<h1>Panglao Trip 2026<span>26 → 29 octobre</span></h1>" +
+      '<a class="hotel" href="' + mapsUrl(H) + '" target="_blank" rel="noopener">' + ico("map") + "<span><b>Island World Panglao</b>Purok 7, Tawala · 10-15 min d'Alona</span><span class=\"go\">Maps</span></a></div></section>" +
+      '<div class="count" id="cd">' + countdownHTML() + "</div>" +
+      '<div class="sec"><h2>' + (st.phase === "during" ? "Aujourd'hui" : "Jour " + day.n + " · " + esc(day.label)) + '</h2><button class="more" type="button" data-goday="' + (day.n - 1) + '">Toute la journée</button></div>' +
+      '<div class="plist">' + items + "</div>" +
+      '<div class="sec"><h2>Le guide</h2></div><div class="tiles">' + tiles.map(function (t) { return '<button class="tile" type="button" data-go="' + t[0] + '"><span class="ic" style="background:' + t[3] + '">' + ico(t[1], "") + "</span>" + t[2] + "</button>"; }).join("") + "</div>" +
+      '<div class="sec"><h2>À réserver</h2><button class="more" type="button" data-go="bookings">Tout voir</button></div>' +
+      '<div class="plist">' + (todo.length ? todo.map(function (b) { return '<button class="prow" type="button" data-go="bookings"><span class="x"><b>' + esc(b.title) + "</b><span>" + esc(b.when) + (b.deadline ? " · avant : " + esc(b.deadline) : "") + "</span></span>" + pill("todo") + "</button>"; }).join("") : '<div class="prow"><span class="x"><b>Tout est réservé</b></span></div>') + "</div>" +
+      '<p class="foot">Mis à jour le ' + esc(D.updated) + ". Prix et horaires : voir les étiquettes « vérifié » ou « estimé ».</p>";
+    clearInterval(cdTimer); cdTimer = setInterval(function () { var c = $("#cd"); if (c && cur === "home") c.innerHTML = countdownHTML(); }, 30000);
+  }
+
+  /* ---------- days ---------- */
+  function rDays() {
+    var day = D.days[state.day];
+    var btns = D.days.map(function (d, i) { return '<button class="dbtn" type="button" data-day="' + i + '" aria-pressed="' + (i === state.day) + '"><small>' + d.label.split(" ")[0] + "</small><b class=\"num\">" + d.label.split(" ")[1] + "</b></button>"; }).join("");
+    var tl = day.items.map(function (it, i) {
+      var k = KIND[it.k] || KIND.rest, p = it.place && byId[it.place], sc = p ? p.scene : k[2];
+      var alt = (it.alt || []).map(function (a) { return '<button class="mini" type="button" data-place="' + a + '">' + esc(byId[a].name) + "</button>"; }).join("");
+      var meta = (it.cost ? '<span class="mini">' + esc(it.cost) + "</span>" : "") + (it.status ? pill(it.status) : "") + (p && p.id !== "hotel" && p.route.mode !== "—" ? '<span class="mini">' + esc(p.route.mode) + "</span>" : "");
+      return '<div class="ti" style="--k:' + k[1] + ";animation-delay:" + (i * 45) + 'ms"><span class="tm num">' + it.t.replace(":", "h") + '</span><span class="dot"></span>' +
+        '<div class="card" role="button" tabindex="0" ' + (p ? 'data-place="' + p.id + '"' : 'data-item="' + state.day + ":" + i + '"') + '><div class="thumb">' + SCN(sc) + (p ? pic(p.id) : "") + '</div><div class="body"><div class="kind">' + k[0] + "</div><h3>" + esc(it.title) + "</h3>" +
+        (it.note ? "<p>" + esc(it.note) + "</p>" : "") + '<div class="meta">' + meta + (alt ? '<span class="mini" style="background:none;padding-left:0">Aussi :</span>' + alt : "") + "</div></div></div></div>";
+    }).join("");
+    $("#v-days").innerHTML = '<div class="days">' + btns + "</div>" +
+      '<div id="dayc"><section class="dayhero">' + SCN(day.scene) + pic("jour" + day.n) + '<div class="shade"></div><div class="in"><div class="d">Jour ' + day.n + " · " + esc(day.label) + " octobre</div><h2>" + esc(day.title) + '</h2><div class="b num"><span>Éco ~' + peso(day.budget.eco) + " / pers.</span><span>Confort ~" + peso(day.budget.conf) + " / pers.</span></div></div></section>" +
+      '<div class="tl">' + tl + "</div></div>" +
+      '<p class="foot">Balayez vers la gauche ou la droite pour changer de jour.</p>';
+  }
+  function itemSheet(di, ii) {
+    var it = D.days[di].items[ii], k = KIND[it.k] || KIND.rest;
+    openSheet('<div class="sh">' + SCN(k[2]) + '<span class="grab"></span><button class="close" type="button" data-close aria-label="Fermer">' + ico("close") + "</button></div>" +
+      '<div class="sb"><div class="tags"><span class="pill p-info">' + k[0] + " · " + it.t.replace(":", "h") + "</span>" + (it.status ? pill(it.status) : "") + "</div><h2>" + esc(it.title) + "</h2><p style=\"margin-top:10px\">" + esc(it.note || "") + "</p>" +
+      (it.cost ? '<div class="rows"><dl class="rw"><dt>Coût</dt><dd>' + esc(it.cost) + "</dd></dl></div>" : "") +
+      (it.status === "todo" ? '<div class="btns"><button class="btn pri" type="button" data-go="bookings" data-close>Voir les réservations</button></div>' : "") + "</div>");
+  }
+
+  /* ---------- place sheet ---------- */
+  function openPlace(id) {
+    var p = byId[id]; if (!p) return;
+    var near = D.places.filter(function (q) { return q.id !== p.id && q.id !== "hotel" && distKm(p, q) <= 0.6; })
+      .sort(function (a, b) { return distKm(p, a) - distKm(p, b); }).slice(0, 8);
+    var catName = D.cats[p.cat] || { beach: "Plage", sea: "En mer", sight: "Visite", stay: "Hôtel", transport: "Transport", food: "Restaurant" }[p.cat] || "";
+    var rows = "";
+    rows += '<dl class="rw"><dt>Prix</dt><dd>' + esc(p.price) + "</dd></dl>";
+    if (p.hours) rows += '<dl class="rw"><dt>Horaires</dt><dd>' + esc(p.hours) + "</dd></dl>";
+    if (p.phone) rows += '<dl class="rw"><dt>Téléphone</dt><dd>' + contactHTML(p.phone) + "</dd></dl>";
+    if (p.id !== "hotel") {
+      rows += '<dl class="rw"><dt>Distance</dt><dd class="num">' + km(p) + " depuis l'hôtel</dd></dl>";
+      rows += '<dl class="rw"><dt>Y aller</dt><dd>' + esc(p.route.mode) + (p.route.time ? " · " + esc(p.route.time) : "") + "</dd></dl>";
+      rows += '<dl class="rw"><dt>Coût trajet</dt><dd>' + esc(p.route.cost) + "</dd></dl>";
+    }
+    openSheet('<div class="sh">' + SCN(p.scene) + pic(p.id) + '<span class="grab"></span><button class="close" type="button" data-close aria-label="Fermer">' + ico("close") + "</button></div>" +
+      '<div class="sb"><h2>' + esc(p.name) + '</h2><div class="tags">' + (catName ? '<span class="pill p-info">' + esc(catName) + "</span>" : "") + ps(p.ps) +
+      (p.tags || []).map(function (t) { return '<span class="pill p-ok">' + esc(t) + "</span>"; }).join("") + "</div><p>" + esc(p.desc) + "</p>" +
+      '<div class="rows">' + rows + "</div>" +
+      '<div class="btns"><a class="btn pri" href="' + mapsUrl(p) + '" target="_blank" rel="noopener">' + ico("map") + "Ouvrir dans Maps</a>" +
+      (p.id !== "hotel" ? '<a class="btn sec2" href="' + dirUrl(p) + '" target="_blank" rel="noopener">' + ico("route") + "Itinéraire depuis l'hôtel</a>" : "") + "</div>" +
+      (near.length ? '<div class="sec" style="margin-top:6px"><h2 style="font-size:16px">À proximité (moins de 600 m)</h2></div><div class="near">' + near.map(function (q) { return '<button class="chip" type="button" data-place="' + q.id + '">' + esc(q.name) + "</button>"; }).join("") + "</div>" : "") +
+      "</div>");
+  }
+  var lastFocus;
+  function openSheet(html) {
+    lastFocus = document.activeElement;
+    var s = $("#sheet"); s.innerHTML = html; s.scrollTop = 0; s.classList.add("on"); $("#scrim").classList.add("on"); s.setAttribute("aria-hidden", "false");
+    var c = s.querySelector(".close"); if (c) c.focus({ preventScroll: true });
+  }
+  function closeSheet() { var s = $("#sheet"); s.classList.remove("on"); $("#scrim").classList.remove("on"); s.setAttribute("aria-hidden", "true"); if (lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true }); }
+
+  /* ---------- explore ---------- */
+  var FILTERS = [["all", "Tout"], ["walk", "À pied"], ["alona", "Navette / Alona"], ["tri", "Tricycle"], ["sea", "En mer"], ["country", "Campagne"], ["eat", "Restos & cafés"], ["spa", "Spas"]];
+  function inFilter(p, f) {
+    if (p.id === "hotel") return false;
+    var m = p.route.mode;
+    return f === "all" || (f === "walk" && m === "À pied") || (f === "alona" && /Navette/.test(m)) || (f === "tri" && /Tricycle/.test(m)) ||
+      (f === "sea" && /Bateau/.test(m)) || (f === "country" && /Van privé/.test(m)) || (f === "eat" && /brunch|italian|seafood|burger|beachfront|food/.test(p.cat)) || (f === "spa" && p.cat === "spa");
+  }
+  function groupColor(p) {
+    return { beach: "#2FB3C2", sea: "#1F8FA6", sight: "#6E9440", spa: "#8E7BB5", transport: "#5B7BC0", stay: "#EE6448", brunch: "#F6A93B" }[p.cat] || "#EE6448";
+  }
+  function radarSVG(list) {
+    var cx = 180, cy = 180, R = 166, k = 0.3, MAX = 70;
+    function rad(d) { return R * Math.log(1 + d / k) / Math.log(1 + MAX / k); }
+    var rings = [0.5, 1, 2, 5, 20, 60].map(function (d) { var r = rad(d); return '<circle cx="' + cx + '" cy="' + cy + '" r="' + r.toFixed(1) + '" fill="none" stroke="var(--line)" stroke-width="1" stroke-dasharray="' + (d < 5 ? "3 4" : "0") + '"/><text x="' + (cx + 3) + '" y="' + (cy - r + 11).toFixed(1) + '" font-size="9.5" fill="var(--mute)" font-family="var(--body)">' + (d < 1 ? d * 1000 + " m" : d + " km") + "</text>"; }).join("");
+    var label = { alona: 1, dumaluan: 1, virgin: 1, balicasag: 1, choco: 1, corella: 1, airport: 1, hinagdanan: 1, loboc: 1, beefarm: 1 };
+    var dots = list.map(function (p) {
+      var d = distKm(H, p), toR = Math.PI / 180, dx = (p.lng - H.lng) * Math.cos(H.lat * toR), dy = (p.lat - H.lat), n = Math.hypot(dx, dy) || 1, r = rad(d);
+      var x = cx + r * dx / n, y = cy - r * dy / n;
+      return '<g class="pt" data-place="' + p.id + '" role="button" tabindex="0" aria-label="' + esc(p.name) + '" style="cursor:pointer"><circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="11" fill="transparent"/><circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="5.2" fill="' + groupColor(p) + '" stroke="var(--surface)" stroke-width="1.5"/>' +
+        (label[p.id] ? '<text x="' + (x > 300 ? x - 8 : x + 8).toFixed(1) + '" text-anchor="' + (x > 300 ? "end" : "start") + '" y="' + (y + 3.5).toFixed(1) + '" font-size="10.5" font-weight="700" fill="var(--ink)" font-family="var(--body)" paint-order="stroke" stroke="var(--surface)" stroke-width="3">' + esc(p.name.split(" (")[0].replace("Philippine Tarsier Sanctuary", "Tarsiers").replace("Bohol-Panglao International Airport", "Aéroport").replace(" Complex", "").replace(" Marine Sanctuary", "").replace(" River Floating Restaurant", "")) + "</text>" : "") + "</g>";
+    }).join("");
+    return '<svg viewBox="0 0 360 360" role="img" aria-label="Carte des lieux autour de l\'hôtel, distances en échelle logarithmique">' + rings +
+      '<text x="' + cx + '" y="12" text-anchor="middle" font-size="11" font-weight="800" fill="var(--lagoon)" font-family="var(--body)">N</text>' + dots +
+      '<g data-place="hotel" role="button" tabindex="0" style="cursor:pointer"><circle cx="' + cx + '" cy="' + cy + '" r="9" fill="var(--coral)" stroke="var(--surface)" stroke-width="2.5"/><text x="' + cx + '" y="' + (cy + 24) + '" text-anchor="middle" font-size="10.5" font-weight="800" fill="var(--ink)" font-family="var(--body)" paint-order="stroke" stroke="var(--surface)" stroke-width="3">Hôtel</text></g></svg>';
+  }
+  function rExplore() {
+    var list = D.places.filter(function (p) { return inFilter(p, state.filter); }).sort(function (a, b) { return a.route.km - b.route.km; });
+    $("#v-explore").innerHTML = '<p class="lead">Tous les lieux du séjour autour de l\'hôtel. Échelle logarithmique : plus on s\'éloigne, plus l\'échelle se resserre.</p>' +
+      '<div class="chips" role="group" aria-label="Filtres">' + FILTERS.map(function (f) { return '<button class="chip" type="button" data-filter="' + f[0] + '" aria-pressed="' + (state.filter === f[0]) + '">' + f[1] + "</button>"; }).join("") + "</div>" +
+      '<div class="radar">' + radarSVG(list) + '<div class="lg"><span><i style="background:#EE6448"></i>Hôtel / restos</span><span><i style="background:#F6A93B"></i>Brunch</span><span><i style="background:#2FB3C2"></i>Plages & mer</span><span><i style="background:#6E9440"></i>Visites</span><span><i style="background:#8E7BB5"></i>Spas</span><span><i style="background:#5B7BC0"></i>Transport</span></div></div>' +
+      '<div class="rlist">' + list.map(function (p) {
+        return '<button class="rrow" type="button" data-place="' + p.id + '"><span class="dt num"><b>' + km(p).replace(" km", "").replace(" m", "") + "</b><small>" + (p.route.km < 1 ? "m" : "km") + '</small></span><span class="x"><b>' + esc(p.name) + "</b><span>" + esc(p.route.mode) + (p.route.time ? " · " + esc(p.route.time) : "") + " · " + esc(p.route.cost) + "</span></span></button>";
+      }).join("") + "</div>";
+  }
+
+  /* ---------- food ---------- */
+  function rFood() {
+    var cats = Object.keys(D.cats), c = state.food;
+    var list = D.places.filter(function (p) { return p.cat === c; }).sort(function (a, b) { return a.route.km - b.route.km; });
+    var note = c === "burger" ? '<div class="note"><b>Fish burger :</b> aucune adresse spécialisée n\'a été trouvée à Panglao. Voici les burgers les mieux notés ; demander une version poisson. Kajun se présente comme 100 % halal.</div>' :
+      c === "spa" ? '<div class="note"><b>Massage philippin :</b> demander un « hilot », peu de spas l\'affichent. Réserver 1 à 2 h avant par téléphone.</div>' :
+      '<div class="note"><b>Sans porc ni alcool :</b> demander « no pork, no lard, no wine in the sauce, separate grill please ».</div>';
+    $("#v-food").innerHTML = '<div class="chips" role="group" aria-label="Catégories">' + cats.map(function (k) { return '<button class="chip" type="button" data-food="' + k + '" aria-pressed="' + (k === c) + '">' + esc(D.cats[k]) + "</button>"; }).join("") + "</div>" + note +
+      '<div class="grid">' + list.map(function (p, i) {
+        return '<button class="pc" type="button" data-place="' + p.id + '" style="animation-delay:' + (i * 40) + 'ms"><span class="ph">' + SCN(p.scene) + pic(p.id) + (p.tags && p.tags.length ? '<span class="tagf pill p-ok">' + esc(p.tags[0]) + "</span>" : "") + '</span><span class="bd"><b>' + esc(p.name) + '</b><span class="sp">' + esc(p.desc) + "</span>" +
+          '<span class="sp" style="color:var(--ink);font-weight:600">' + esc(p.price) + '</span><span class="ft"><span class="d num">' + km(p) + "</span><span>" + esc(p.hours || "") + "</span></span></span></button>";
+      }).join("") + "</div>" +
+      '<p class="foot">Prix par personne estimés à partir des avis et des cartes publiées, sauf mention « Prix vérifié ».</p>';
+  }
+
+  /* ---------- bookings ---------- */
+  function bkStatus(b) { if (b.status === "ok" || b.status === "later") return b.status; return store.get("bk:" + b.id, b.status); }
+  function provHTML(p) {
+    var btn = "";
+    if (p.url) {
+      var lbl = /wa\.me/.test(p.url) ? "Réserver sur WhatsApp" : /getyourguide|panglaoislandtours/.test(p.url) ? "Réserver en ligne" : "Site du prestataire";
+      btn += '<a class="btn ' + (p.rec ? "cor" : "pri") + '" href="' + esc(p.url) + '" target="_blank" rel="noopener">' + (/wa\.me/.test(p.url) ? ico("wa") : ico("ticket")) + lbl + "</a>";
+    }
+    if (p.site) btn += '<a class="btn sec2" href="' + esc(p.site) + '" target="_blank" rel="noopener">Site</a>';
+    if (p.place && byId[p.place]) btn += '<a class="btn sec2" href="' + mapsUrl(byId[p.place]) + '" target="_blank" rel="noopener">' + ico("map") + "Maps</a>";
+    return '<div class="prov"><div class="pn"><b>' + esc(p.name) + "</b>" + (p.rec ? '<span class="pill p-info">Recommandé</span>' : "") + (p.ps ? ps(p.ps) : "") + "</div>" +
+      '<div class="ds">' + esc(p.desc) + "</div>" +
+      (p.price1 && p.price1 !== "—" ? '<div class="prices"><div><small>Par personne</small><b class="num">' + esc(p.price1) + '</b></div><div><small>Pour 6</small><b class="num">' + esc(p.price6) + "</b></div></div>" : "") +
+      (p.meet ? '<div class="kv"><span>Rendez-vous :</span> ' + esc(p.meet) + "</div>" : "") +
+      (p.incl && p.incl !== "—" ? '<div class="kv"><span>Inclus :</span> ' + esc(p.incl) + "</div>" : "") +
+      (p.cancel && p.cancel !== "—" ? '<div class="kv"><span>Annulation :</span> ' + esc(p.cancel) + "</div>" : "") +
+      (p.contacts && p.contacts.length ? '<div class="kv" style="display:flex;flex-direction:column;gap:6px;margin-top:8px">' + p.contacts.map(contactHTML).join("") + "</div>" : "") +
+      (btn ? '<div class="btns" style="margin-bottom:0">' + btn + "</div>" : "") + "</div>";
+  }
+  function rBookings() {
+    $("#v-bookings").innerHTML = '<p class="lead">Excursions, transports et tables. Rien n\'est marqué confirmé sans votre confirmation.</p>' +
+      D.bookings.map(function (b, i) {
+        var st = bkStatus(b), fixed = b.status === "ok" || b.status === "later";
+        var seg = fixed ? "" : '<div class="seg" role="group" aria-label="Statut">' + [["todo", "À réserver"], ["wait", "En attente"], ["ok", "Confirmé"]].map(function (s) { return '<button type="button" data-bk="' + b.id + '" data-st="' + s[0] + '" aria-pressed="' + (st === s[0]) + '">' + s[1] + "</button>"; }).join("") + '</div><div class="segl">Statut enregistré sur ce téléphone uniquement.</div>';
+        return '<article class="bk" style="animation-delay:' + i * 50 + 'ms"><div class="hd"><span class="x"><h3>' + esc(b.title) + '</h3><div class="when">' + esc(b.when) + (b.deadline && st !== "ok" ? " · à faire : " + esc(b.deadline) : "") + "</div><p>" + esc(b.summary) + "</p>" + seg + "</span>" + pill(st) + "</div>" +
+          (b.providers.length ? '<div class="perf"></div><div class="pv">' + b.providers.map(provHTML).join("") + "</div>" : "") + "</article>";
+      }).join("");
+  }
+
+  /* ---------- budget ---------- */
+  function rBudget() {
+    var m = state.mode, opts = store.get("opts", {});
+    var total = D.budget.reduce(function (s, b) { return s + b[m]; }, 0);
+    var optSum = D.options.reduce(function (s, o) { return s + (opts[o.id] ? o[m] : 0); }, 0);
+    var g = total + optSum;
+    var perDay = D.days.map(function (d) { return D.budget.filter(function (b) { return b.day === d.n; }).reduce(function (s, b) { return s + b[m]; }, 0); });
+    var maxD = Math.max.apply(null, perDay);
+    var cats = {}; D.budget.forEach(function (b) { cats[b.cat] = (cats[b.cat] || 0) + b[m]; });
+    var maxC = Math.max.apply(null, Object.keys(cats).map(function (k) { return cats[k]; }));
+    $("#v-budget").innerHTML = '<div class="toggle" role="group" aria-label="Niveau de budget"><button type="button" data-mode="eco" aria-pressed="' + (m === "eco") + '">Économique</button><button type="button" data-mode="conf" aria-pressed="' + (m === "conf") + '">Confortable</button></div>' +
+      '<div class="tot num"><div><small>Par personne</small><b>' + peso(g / 6) + '</b></div><div><small>Pour les 6</small><b>' + peso(g) + "</b></div></div>" +
+      '<p class="lead" style="margin-top:-2px">Hors vols et hôtel. Moyenne par personne, adultes et enfants confondus.</p>' +
+      '<div class="sec" style="margin-top:6px"><h2>Par journée</h2><span class="more" style="color:var(--mute)">par personne</span></div><div class="bars num">' +
+      D.days.map(function (d, i) { return '<div class="bar"><span>' + esc(d.label) + '</span><span class="tr"><span class="fl" style="width:' + (perDay[i] / maxD * 100).toFixed(1) + '%"></span></span><span class="v">' + peso(perDay[i] / 6) + "</span></div>"; }).join("") + "</div>" +
+      '<div class="sec"><h2>Par poste</h2><span class="more" style="color:var(--mute)">pour 6</span></div><div class="bars num">' +
+      Object.keys(cats).map(function (k) { return '<div class="bar" style="grid-template-columns:92px 1fr 74px"><span>' + esc(k) + '</span><span class="tr"><span class="fl" style="background:var(--coral);width:' + (cats[k] / maxC * 100).toFixed(1) + '%"></span></span><span class="v">' + peso(cats[k]) + "</span></div>"; }).join("") + "</div>" +
+      '<div class="sec"><h2>Options</h2></div><div class="lines">' + D.options.map(function (o) {
+        return '<label class="opt" for="opt-' + o.id + '"><input type="checkbox" id="opt-' + o.id + '" data-opt="' + o.id + '"' + (opts[o.id] ? " checked" : "") + '><span class="x">' + esc(o.label) + "<br><small class=\"num\">" + (o[m] > 0 ? "+" : "−") + peso(Math.abs(o[m])) + " pour 6</small></span></label>";
+      }).join("") + "</div>" +
+      '<div class="sec"><h2>Détail</h2></div>' + D.days.map(function (d) {
+        return '<div class="dh">' + esc(d.label) + " · " + esc(d.title) + '</div><div class="lines" style="margin-top:4px">' + D.budget.filter(function (b) { return b.day === d.n; }).map(function (b) {
+          return '<div class="ln"><span class="l">' + esc(b.label) + "</span>" + ps(b.s) + '<span class="a num">' + peso(b[m]) + "</span></div>";
+        }).join("") + "</div>";
+      }).join("") +
+      '<p class="foot">« Prix vérifié » : tarif publié par le prestataire ou une source officielle. « Estimé » : à confirmer sur place.</p>';
+  }
+
+  /* ---------- checklist ---------- */
+  function rCheck() {
+    var done = store.get("chk", { flights_ok: true, hotel_ok: true }), all = 0, n = 0;
+    D.checklist.forEach(function (g) { g.items.forEach(function (it) { all++; if (done[it.id]) n++; }); });
+    var pct = all ? n / all : 0, C = 2 * Math.PI * 24;
+    $("#v-checklist").innerHTML = '<div class="prog"><svg viewBox="0 0 58 58" aria-hidden="true"><circle cx="29" cy="29" r="24" fill="none" stroke="var(--chip)" stroke-width="7"/><circle cx="29" cy="29" r="24" fill="none" stroke="var(--glass)" stroke-width="7" stroke-linecap="round" stroke-dasharray="' + (C * pct).toFixed(1) + " " + C.toFixed(1) + '" transform="rotate(-90 29 29)"/></svg>' +
+      '<div><b style="font-family:var(--display);font-size:22px" class="num">' + n + " / " + all + '</b><br><span style="color:var(--mute);font-size:13px">Coché sur ce téléphone. Chacun a sa propre liste.</span></div></div>' +
+      D.checklist.map(function (g) {
+        return '<div class="cg"><h3>' + esc(g.group) + "</h3>" + g.items.map(function (it) {
+          return '<label class="ck" for="ck-' + it.id + '"><input type="checkbox" id="ck-' + it.id + '" data-ck="' + it.id + '"' + (done[it.id] ? " checked" : "") + "><span>" + esc(it.label) + "</span></label>";
+        }).join("") + "</div>";
+      }).join("");
+  }
+
+  /* ---------- infos ---------- */
+  function rInfos() {
+    $("#v-infos").innerHTML = '<div class="sec" style="margin-top:6px"><h2>Météo & marées</h2></div><p class="lead">Prévisions du 25 octobre, fiables à 1-3 jours. Aucun cyclone ne menace les Visayas. Vent très faible : mer calme.</p>' +
+      '<div class="tbx"><table class="wt"><tr><th>Jour</th><th>Prévision</th><th>Max</th><th>Marée basse</th></tr>' + D.info.weather.map(function (w) { return "<tr><td><b>" + esc(w[0]) + "</b></td><td>" + esc(w[1]) + '</td><td class="num">' + esc(w[2]) + '</td><td class="num">' + esc(w[3]) + "</td></tr>"; }).join("") + "</table></div>" +
+      '<div class="sec"><h2>Plan B · pluie ou mer agitée</h2></div><div class="rlist">' + D.info.planb.map(function (x) { var p = byId[x[0]]; return '<button class="rrow" type="button" data-place="' + p.id + '"><span class="dt num"><b>' + km(p).replace(" km", "").replace(" m", "") + "</b><small>" + (p.route.km < 1 ? "m" : "km") + '</small></span><span class="x"><b>' + esc(p.name) + "</b><span>" + esc(x[1]) + "</span></span></button>"; }).join("") +
+      '<div class="rrow"><span class="x"><b>Sortie en mer annulée mercredi ?</b><span>Mini-sortie Balicasag jeudi 6h00-9h00, retour avant le check-out.</span></span></div></div>' +
+      '<div class="sec"><h2>Contacts utiles</h2></div><div class="ctc">' + D.info.contacts.map(function (c) { return '<dl class="rw"><dt>' + esc(c[0]) + "</dt><dd>" + contactHTML(c[1]) + "</dd></dl>"; }).join("") + "</div>" +
+      '<div class="sec"><h2>Bon à savoir</h2></div><ul class="tips">' +
+      ["Pas de distributeur après la sécurité à l'aéroport de Panglao : arriver avec des pesos.", "Tricycles : toujours fixer le prix avant de monter.", "Soleil : UV 8. Chapeaux, t-shirts anti-UV, crème solaire respectueuse des récifs.",
+        "En mer : gilets pour les enfants, chaussures d'eau, sac étanche. Ne pas toucher les tortues ni les coraux.", "Tarsiers : silence, pas de flash.", "Pas de taxi à compteur à l'aéroport, et Grab n'est pas fiable à Bohol.", "Urgences : 911."].map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ul>" +
+      '<div class="sec"><h2>Sources</h2></div><p class="src">' + D.info.sources.map(function (s) { return '<a href="' + esc(s[1]) + '" target="_blank" rel="noopener">' + esc(s[0]) + "</a>"; }).join(" · ") + "</p>";
+  }
+
+  /* ---------- install ---------- */
+  function rInstall() {
+    var url = SHARE_URL || location.href.split("#")[0];
+    $("#v-install").innerHTML = '<div class="sec" style="margin-top:6px"><h2>Partager avec le groupe</h2></div>' +
+      '<div class="rows" style="padding:12px 14px"><div style="font-size:13px;color:var(--mute);margin-bottom:6px">Lien de l\'application</div><code id="shareurl" style="word-break:break-all;font-weight:600;user-select:all">' + esc(url) + "</code>" +
+      '<div class="btns" style="margin-bottom:0"><button class="btn cor" type="button" data-share>' + ico("share") + 'Partager le lien</button><button class="btn sec2" type="button" data-copy="' + esc(url) + '">Copier</button></div></div>' +
+      '<div class="sec"><h2>Sur iPhone (Safari)</h2></div><div class="steps"><div class="step">Ouvrir le lien dans <b>Safari</b>.</div><div class="step">Toucher le bouton <b>Partager</b> (carré avec une flèche).</div><div class="step">Choisir <b>« Sur l\'écran d\'accueil »</b>, puis <b>Ajouter</b>.</div></div>' +
+      '<div class="sec"><h2>Sur Android (Chrome)</h2></div><div class="steps"><div class="step">Ouvrir le lien dans <b>Chrome</b>.</div><div class="step">Toucher le menu <b>⋮</b> en haut à droite.</div><div class="step">Choisir <b>« Installer l\'application »</b> ou <b>« Ajouter à l\'écran d\'accueil »</b>.</div></div>' +
+      '<div class="note" style="margin-top:16px">' + (IS_PWA ? "<b>Hors connexion :</b> après la première ouverture, le programme reste consultable sans réseau. Les liens Google Maps et WhatsApp demandent une connexion." :
+        "<b>Version en ligne :</b> l'application demande une connexion. Le raccourci sur l'écran d'accueil ouvre ce lien. Pour une icône dédiée et un usage hors connexion, utiliser la version PWA hébergée.") + "</div>" +
+      '<p class="foot">Aucun compte n\'est nécessaire pour consulter le programme.</p>';
+  }
+
+  /* ---------- events ---------- */
+  document.addEventListener("click", function (e) {
+    var t = e.target.closest("[data-copy],[data-share],[data-close],[data-place],[data-item],[data-go],[data-goday],[data-day],[data-food],[data-filter],[data-bk],[data-mode]");
+    if (!t) { if (e.target.id === "scrim") closeSheet(); return; }
+    if (t.hasAttribute("data-copy")) { e.stopPropagation(); var code = t.parentNode.querySelector("code"); copyText(t.getAttribute("data-copy"), code); return; }
+    if (t.hasAttribute("data-share")) { shareLink(); return; }
+    if (t.hasAttribute("data-place")) { e.stopPropagation(); openPlace(t.getAttribute("data-place")); return; }
+    if (t.hasAttribute("data-item")) { var a = t.getAttribute("data-item").split(":"); itemSheet(+a[0], +a[1]); return; }
+    if (t.hasAttribute("data-close") && !t.hasAttribute("data-go")) { closeSheet(); return; }
+    if (t.hasAttribute("data-go")) { closeSheet(); show(t.getAttribute("data-go")); return; }
+    if (t.hasAttribute("data-goday")) { state.day = +t.getAttribute("data-goday"); show("days"); return; }
+    if (t.hasAttribute("data-day")) { state.day = +t.getAttribute("data-day"); rDays(); try { history.replaceState(null, "", "#jour" + (state.day + 1)); } catch (x) { } return; }
+    if (t.hasAttribute("data-food")) { state.food = t.getAttribute("data-food"); rFood(); return; }
+    if (t.hasAttribute("data-filter")) { state.filter = t.getAttribute("data-filter"); rExplore(); return; }
+    if (t.hasAttribute("data-bk")) { store.set("bk:" + t.getAttribute("data-bk"), t.getAttribute("data-st")); rBookings(); toast("Statut mis à jour sur ce téléphone"); return; }
+    if (t.hasAttribute("data-mode")) { state.mode = t.getAttribute("data-mode"); store.set("mode", state.mode); rBudget(); return; }
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeSheet();
+    if ((e.key === "Enter" || e.key === " ") && e.target.matches('[role="button"]')) { e.preventDefault(); e.target.click(); }
+  });
+  document.addEventListener("change", function (e) {
+    var t = e.target;
+    if (t.dataset.ck) { var d = store.get("chk", { flights_ok: true, hotel_ok: true }); d[t.dataset.ck] = t.checked; store.set("chk", d); rCheck(); var el = document.getElementById(t.id); if (el) el.focus(); }
+    if (t.dataset.opt) { var o = store.get("opts", {}); o[t.dataset.opt] = t.checked; store.set("opts", o); rBudget(); var el2 = document.getElementById(t.id); if (el2) el2.focus(); }
+  });
+  /* swipe between days */
+  var sx = null, sy = null;
+  document.addEventListener("touchstart", function (e) { if (cur !== "days" || $("#sheet").classList.contains("on")) return; sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, { passive: true });
+  document.addEventListener("touchend", function (e) {
+    if (sx == null) return; var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy; sx = null;
+    if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.6) { var nd = state.day + (dx < 0 ? 1 : -1); if (nd >= 0 && nd < 4) { state.day = nd; rDays(); } }
+  }, { passive: true });
+  $("#back").addEventListener("click", function () { show("home"); });
+
+  /* ---------- boot ---------- */
+  var h = (location.hash || "").replace("#", "");
+  var m = h.match(/^jour([1-4])$/);
+  if (m) { state.day = +m[1] - 1; show("days"); }
+  else show({ accueil: "home", jours: "days", explore: "explore", food: "food", bookings: "bookings", budget: "budget", checklist: "checklist", infos: "infos", installer: "install", install: "install" }[h] || "home");
+})();
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('./sw.js').catch(function(){});});}</script></body></html>

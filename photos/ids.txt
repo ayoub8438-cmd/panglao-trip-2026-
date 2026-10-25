@@ -1,0 +1,48 @@
+hotel        Island World Panglao
+airport      Bohol-Panglao International Airport
+alona        Alona Beach
+dumaluan     Dumaluan Beach
+virgin       Virgin Island (banc de sable)
+balicasag    Balicasag Marine Sanctuary
+corella      Philippine Tarsier Sanctuary (Corella)
+bilar        Bilar Man-Made Forest
+choco        Chocolate Hills Complex
+loboc        Loboc River Floating Restaurant
+baclayon     Église de Baclayon
+hinagdanan   Hinagdanan Cave
+coralgarden  Alona's Coral Garden
+mahalo       Mahalo Restaurant
+coffeeforya  Coffee For Ya
+craze        CRAZE Artisan Café
+afe          AFE Coffee & Brunch
+shaka        Shaka Panglao
+anc          ANC Brunch Cafe
+blooming     Blooming Angel Bakery Café
+napoleat     Napoleat
+atavola      A Tavola
+giuseppe     Giuseppe Pizzeria & Sicilian Roast
+toto         Toto e Peppino
+vanilla      Vanilla Sky
+seaku        Seaku
+jumbo        Jumbo Crab Bohol
+jose         Jose' Panglao
+lamoy        Lamoy Restaurant
+no1          No.1 Seafood Restaurant
+redcrab      Redcrab Bohol
+kajun        Kajun Bohol
+smoking      Smoking Griddle
+burgerbros   Burger Bros
+amorita      Amorita Resort (Saffron)
+tarana       Tarana
+oasis        Oasis Restaurant & Beach Club
+escape       Escape, Alona Beach Bar
+saltsky      Salt & Sky Rooftop
+haru         Haru Seaside Restaurant
+beefarm      Bohol Bee Farm
+bellevue     The Bellevue Resort
+avocado      Avocado BodySpa
+thaimoon     Thai Moon Body Massage & Spa
+luna         Luna Tiger Spa (Alona)
+alonazen     Alona Zen Spa
+thairoyale   Thai Royale Spa Panglao
+yeon         The Yeon Spa

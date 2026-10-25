@@ -1,0 +1,10 @@
+Photos facultatives
+====================
+Déposez ici vos propres photos au format JPG : elles remplacent automatiquement les illustrations.
+Noms attendus (en minuscules) :
+  hero.jpg            écran d'accueil
+  jour1.jpg ... jour4.jpg   en-tête de chaque journée
+  <identifiant>.jpg   un lieu, par exemple alona.jpg, choco.jpg, corella.jpg, balicasag.jpg, virgin.jpg,
+                      dumaluan.jpg, loboc.jpg, hotel.jpg, kajun.jpg, napoleat.jpg, amorita.jpg...
+Liste complète des identifiants : voir le fichier ids.txt.
+Utilisez uniquement des photos dont vous avez les droits (les vôtres, ou sous licence libre).
